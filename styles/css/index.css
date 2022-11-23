@@ -1,0 +1,162 @@
+/* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+* {
+  font-family: var(--ff-primary);
+  color: var(--clr-grayblue-300);
+}
+
+:root {
+  --width-mobile: 375px;
+  --width-tablet: 768px;
+  --width-desktop: 1440px;
+  --ff-primary: "Inter", sans-serif;
+  --fw-400: 400;
+  --fw-700: 700;
+  --fw-800: 800;
+  --fs-300: 0.6875rem;
+  --fs-400: 0.8125rem;
+  --fs-500: 1.25rem;
+  --clr-orange: #e9ab53;
+  --clr-red: #f15e50;
+  --clr-primary: #fffdfa;
+  --clr-grayblue-100: #c5c6ce;
+  --clr-grayblue-200: #5d5f79;
+  --clr-grayblue-300: #2d2f3e;
+  --transition-std: all 0.05s ease-in-out;
+}
+
+.grid-col-span-2 {
+  grid-column: span 2;
+}
+
+.body-wrapper {
+  padding: 2rem 2rem 0 2rem;
+}
+.body-wrapper .main-wrapper {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding-block: 2rem;
+}
+.body-wrapper .main-wrapper .main-article img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.body-wrapper .main-wrapper .main-article__info {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.header-container {
+  height: 70px;
+}
+.header-container nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-container nav img {
+  cursor: pointer;
+}
+.header-container nav .__icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header-container nav .__icons .chip-line {
+  height: 20px;
+  width: 2px;
+  background: var(--clr-red);
+}
+.header-container nav .nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.header-container nav .nav-list li {
+  cursor: pointer;
+  transition: var(--transition-std);
+}
+.header-container nav .nav-list li:hover {
+  color: var(--clr-red);
+  transform: scale(1.1);
+}

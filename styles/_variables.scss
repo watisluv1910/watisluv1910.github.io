@@ -1,0 +1,24 @@
+:root {
+    --width-mobile: 375px;
+    --width-tablet: 768px;
+    --width-desktop: 1440px;
+
+    --ff-primary: 'Inter', sans-serif;
+
+    --fw-400: 400;
+    --fw-700: 700;
+    --fw-800: 800;
+
+    --fs-300: 0.6875rem;
+    --fs-400: 0.8125rem;
+    --fs-500: 1.25rem;
+
+    --clr-orange: #e9ab53;
+    --clr-red: #f15e50;
+    --clr-primary: #fffdfa;
+    --clr-grayblue-100: #c5c6ce;
+    --clr-grayblue-200: #5d5f79;
+    --clr-grayblue-300: #2d2f3e;
+
+    --transition-std: all 0.05s ease-in-out;
+}

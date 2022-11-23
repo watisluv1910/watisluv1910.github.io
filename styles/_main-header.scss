@@ -1,0 +1,42 @@
+.header-container {
+    height: 70px;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            cursor: pointer;
+        }
+
+        .__icons {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .chip-line {
+                height: 20px;
+                width: 2px;
+
+                background: var(--clr-red);
+            }
+        }
+
+        .nav-list {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            li {
+                cursor: pointer;
+                transition: var(--transition-std);
+
+                &:hover {
+                    color: var(--clr-red);
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
