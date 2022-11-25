@@ -10,99 +10,356 @@
     </head>
     <body>
         <div class="body-wrapper">
-            <header class="header-container">
-                <nav>
-                    <div class="__icons">
-                        <div class="chip-line">
-                            <div class="chip"></div>
-                            <div class="chip"></div>
-                            <div class="chip"></div>
-                            <div class="chip"></div>
-                        </div>
-                        <img src="../resources/icons/menu.svg" alt="menu" class="menu-toggle" width="30px">
-                        <img src="../resources/icons/sun-black-on-white.png" alt="logo" class="logo" height="70px">
-                    </div>
-                    <ul class="nav-list" role="list">
+            <header class="header__container">
+                <div class="menu__container">
+                    <div class="chip-line"></div>
+                    <img src="../resources/icons/menu.svg" alt="menu" class="menu-toggle">
+                </div>
+                <div class="logo__container grid-col-span-2">
+                    <img src="../resources/icons/sun-black.png" alt="logo" class="main-logo">
+                </div>
+                <nav class="nav-list__container">
+                    <ul class="nav-list ff-subtitle-1" role="list">
                         <li>Home</li>
                         <li>Popular</li>
                         <li>Categories</li>
                         <li>Blogs</li>
                         <li>About</li>
-                        <li><img src="../resources/icons/person.svg" alt="account" class="user-logo" width="40px"></li>
-                    </ul>
+                    </ul>             
                 </nav>
+                <div class="user-icon__container">
+                    <img src="../resources/icons/person.svg" alt="account" class="user-logo">
+                </div>
             </header>
             <main>
                 <div class="main-wrapper">
-                    <div class="main-article grid-col-span-2">
-                        <picture>
-                            <img src="../resources/images/football-main.webp" alt="football">
-                        </picture>
-                        <div class="main-article__info">
-                            <h1 class="__title">How World Cup Politics Explain The Modern World</h1>
-                            <div class="__content">
-                                <p class="__subtitle">
-                                    Billions of people will watch the World Cup in Qatar, fixated on one of the world's premier sporting festivals. But football's governing body FIFA has also unleashed a political tempest, highlighting moral, business and geopolitical dilemmas shaping the modern world.
-                                </p>
-                                <button class="btn sys-btn">Read more</button>
-                            </div>
+                  <div class="general-section__container">
+                    <section class="general-section">
+                      <article class="__item">
+                        <div class="img__container"> <!-- grid-col-span-2 -->
+                          <img src="../resources/images/main-news/football-main.png" alt="football">
                         </div>
-                    </div>
-                    <section class="latest-section__container">
-                        <div class="latest-section">
-                            <h2 class="__header">Latest news</h2>
-                            <div class="__items-wrapper">
-                                <div class="__item">
-                                    <h3 class="__title">Greatest Deal of 21st Century</h3>
-                                    <div class="__content">
-                                        <p class="__subtitle">
-                                            The world's richest man, Elon Musk, has completed his $44bn (£38.1bn) takeover of Twitter.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="__item">
-                                    <h3 class="__title">Inside The Battle for Kherson</h3>
-                                    <div class="__content">
-                                        <p class="__subtitle">
-                                            Mangled metal, charred debris and shattered glass cover the floor as a Ukrainian reconnaissance unit storms a Russian command center on the outskirts of Kherson.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="__item">
-                                    <h3 class="__title">Credit Suisse Warns of $1.6 Billion Loss</h3>
-                                    <div class="__content">
-                                        <p class="__subtitle">
-                                            Credit Suisse expects a pretax loss of up to 1.5 billion Swiss francs ($1.58 billion) in its fourth quarter as it keeps bleeding cash.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>        
+                        <div class="__info"> <!-- grid-col-span-3 -->
+                            <div class="__category ff-overline">World</div>
+                            <div class="__title ff-headline-5">How World Cup Politics Explain The Modern World?</div>
+                            <p class="__subtitle ff-body-1">
+                              Football's governing body FIFA has also unleashed a political tempest...
+                            </p>
                         </div>
+                      </article>
+                      <article class="__item">   
+                        <div class="__info grid-col-span-4">
+                            <div class="__category ff-overline">Politics</div>
+                            <div class="__title ff-subtitle-1">G20 is now G19? Why Putin didn't show up?</div>
+                            <p class="__subtitle ff-body-1">
+                              What devisions have been made this year?
+                            </p>
+                        </div>
+                        <div class="img__container">
+                          <img src="../resources/images/main-news/summit-main.jpg" alt="summit">
+                        </div>
+                      </article>
+                      <article class="__item">   
+                        <div class="__info grid-col-span-4">
+                            <div class="__category ff-overline">Tech</div>
+                            <div class="__title ff-subtitle-1">Apple announced new iPad 10th gen</div>
+                            <p class="__subtitle ff-body-1">
+                              It has iPad Air design and the cheapest price. What's the catch?
+                            </p>
+                        </div>
+                        <div class="img__container">
+                          <img src="../resources/images/main-news/tech-main.jpg" alt="ipad">
+                        </div>
+                      </article>
                     </section>
-                    <!-- ? Popular section -->
-                    <div class="popular-section__item">
-                        <img src="../resources/images/11-11-shopping.webp" alt="shopping" width="300px">
-                        <div class="__content">
-                            <h2 class="__number">01</h2>
-                            <h3 class="__title">Biggest Sale of the Year</h3>
-                            <p class="__subtitle">The best sale deals on Aliexpress in 2022</p>
+                  </div>
+                  <div class="latest-section__container grid-col-span-3">
+                      <section class="latest-section">
+                          <div class="__header ff-headline-6">Latest Updates</div>
+                          <article class="__item">
+                            <div class="__info grid-col-span-2">
+                              <div class="__meta">
+                                <div class="__category ff-overline">Business</div>
+                                <p class="__time ff-body-2">2:31 am</p>
+                              </div>
+                              <div class="__title ff-body-2">The Greatest Deal Of The Twenty First Century</div>
+                            </div>
+                            <div class="img__container">
+                              <img src="../resources/images/latest-news/twitter-latest.png" alt="twitter">
+                            </div>
+                          </article>
+                          <article class="__item">
+                            <div class="__info grid-col-span-2">
+                              <div class="__meta">
+                                <div class="__category ff-overline">World</div>
+                                <p class="__time ff-body-2">4:48 pm</p>
+                              </div>
+                              <div class="__title ff-body-2">As Stocks Stagnate, Many Look To Currency</div>
+                            </div>
+                            <div class="img__container">
+                              <img src="../resources/images/latest-news/stock-latest.webp" alt="stock">
+                            </div>
+                          </article>
+                          <article class="__item">
+                            <div class="__info grid-col-span-2">
+                              <div class="__meta">
+                                <div class="__category ff-overline">Tech</div>
+                                <p class="__time ff-body-2">11:28 pm</p>
+                              </div>
+                              <div class="__title ff-body-2">Designers Use Tech To Make Futuristic Fabrics</div>
+                            </div>
+                            <div class="img__container">
+                              <img src="../resources/images/latest-news/factory-latest.jpg" alt="factory">
+                            </div>
+                          </article>
+                          <article class="__item">
+                            <div class="__info grid-col-span-2">
+                              <div class="__meta">
+                                <div class="__category ff-overline">World</div>
+                                <p class="__time ff-body-2">3:22 pm</p>
+                              </div>
+                              <div class="__title ff-body-2">Converting Farmland Into Housing In West Africa</div>
+                            </div>
+                            <div class="img__container">
+                              <img src="../resources/images/latest-news/house-latest.jpg" alt="house">
+                            </div>
+                          </article>
+                          <article class="__item">
+                            <div class="__info grid-col-span-2">
+                              <div class="__meta">
+                                <div class="__category ff-overline">Local</div>
+                                <p class="__time ff-body-2">4:20 am</p>
+                              </div>
+                              <div class="__title ff-body-2">The Best Noise-Cancelling Headphones</div>
+                            </div>
+                            <div class="img__container">
+                              <img src="../resources/images/latest-news/headphones-latest.jpg" alt="headphones">
+                            </div>
+                          </article>    
+                      </section>
+                  </div>
+                  <div class="stock-section__container grid-col-span-2">
+                    <section class="stock-section">
+                      <div class="__header">
+                        <img src="../resources/images/stock-news/header/stock-stats.png" alt="stock-stats">
+                      </div>
+                      <article class="__item ff-body-2">
+                        <p class="__title">DJIA</p>
+                        <div class="__meta">
+                          <p class="price">7,031.211</p>
+                          <p class="shift minus">- 0.48%</p>
                         </div>
+                      </article>
+                      <article class="__item ff-body-2">
+                        <p class="__title">SP</p>
+                        <div class="__meta">
+                          <p class="price">1,967.84</p>
+                          <p class="shift minus">- 0.00%</p>
+                        </div>
+                      </article>
+                      <article class="__item ff-body-2">
+                        <p class="__title">Nasdaq</p>
+                        <div class="__meta">
+                          <p class="price">6,211.46</p>
+                          <p class="shift plus">+ 0.52%</p>
+                        </div>
+                      </article>
+                      <article class="__item ff-body-2">
+                        <p class="__title">Nikkei</p>
+                        <div class="__meta">
+                          <p class="price">5,981</p>
+                          <p class="shift plus">+ 1.16%</p>
+                        </div>
+                      </article>
+                      <article class="__item ff-body-2">
+                        <p class="__title">DJ Total</p>
+                        <div class="__meta">
+                          <p class="price">89.02</p>
+                          <p class="shift minus">- 0.80%</p>
+                        </div>
+                      </article>
+                      <article class="__item ff-body-2"> <!-- TODO:Remove when width is smaller-->
+                        <p class="__title">SQXL</p>
+                        <div class="__meta">
+                          <p class="price">4,232.33</p>
+                          <p class="shift plus">+ 0.32%</p>
+                        </div>
+                      </article>
+                      <article class="__item ff-body-2"> <!-- TODO:Remove when width is smaller-->
+                        <p class="__title">DPI</p>
+                        <div class="__meta">
+                          <p class="price">1,390.13</p>
+                          <p class="shift minus">- 0.61%</p>
+                        </div>
+                      </article>
+                    </section>
+                  </div>
+                    <div class="popular-section__container">
+                        <section class="popular-section">
+                            <article class="popular-section__item grid-col-span-2">
+                                <img src="../resources/images/11-11-shopping.webp" alt="shopping" width="300px">
+                                <div class="__content">
+                                    <h2 class="__category">Shopping</h2>
+                                    <h3 class="__title">Biggest Sale of the Year</h3>
+                                    <p class="__subtitle">The best sale deals on Aliexpress in 2022</p>
+                                </div>
+                            </article>
+                            <article class="popular-section__item grid-col-span-4">
+                                <img src="../resources/images/god-of-war.jpeg" alt="shopping" width="300px">
+                                <div class="__content">
+                                    <h2 class="__category">Games</h2>
+                                    <h3 class="__title">God of War: Ragnarok Review</h3>
+                                    <p class="__subtitle">How significant are the changes and is the game worth the money?</p>
+                                </div>
+                            </article>
+                            <article class="popular-section__item grid-col-span-2">
+                                <img src="../resources/images/moskvich.jpeg" alt="shopping" width="300px">
+                                <div class="__content">
+                                    <h2 class="__category">Local</h2>
+                                    <h3 class="__title">Start of Production of New Muscovites</h3>
+                                    <p class="__subtitle">What does the famous factory actually produce?</p>
+                                </div>
+                            </article>
+                            <article class="popular-section__item grid-col-span-2">
+                                <img src="../resources/images/god-of-war.jpeg" alt="shopping" width="300px">
+                                <div class="__content">
+                                    <h2 class="__category">Games</h2>
+                                    <h3 class="__title">God of War: Ragnarok Review</h3>
+                                    <p class="__subtitle">How significant are the changes and is the game worth the money?</p>
+                                </div>
+                            </article>
+                        </section>
                     </div>
-                    <div class="popular-section__item">
-                        <img src="../resources/images/god-of-war.jpeg" alt="shopping" width="300px">
-                        <div class="__content">
-                            <h2 class="__number">02</h2>
-                            <h3 class="__title">God of War : Ragnarok Review</h3>
-                            <p class="__subtitle">How significant are the changes and is the game worth the money?</p>
-                        </div>
+                    <div class="additional-section__container">
+                        <section class="additional-section">
+                            <article class="additional-section__item video grid-col-span-7 grid-row-span-2">
+                                <video src="../resources/videos/Noize MC — Страна Дождей.mp4" controls="controls">
+                                    Video tag is not supported by your browser
+                                </video>
+                            </article>
+                            <article class="additional-section__item grid-col-span-3">
+                                <img src="../resources/images/god-of-war.jpeg" alt="shopping" width="300px">
+                                <div class="__content">
+                                    <h2 class="__category">Games</h2>
+                                    <p class="__time">2:31</p>
+                                    <h3 class="__title">God of War : Ragnarok Review</h3>
+                                </div>
+                            </article>
+                            <article class="additional-section__item grid-col-span-3">
+                                <img src="../resources/images/god-of-war.jpeg" alt="shopping" width="300px">
+                                <div class="__content">
+                                    <h2 class="__category">Games</h2>
+                                    <p class="__time">1:37</p>
+                                    <h3 class="__title">God of War : Ragnarok Review</h3>
+                                </div>
+                            </article>
+                        </section>
                     </div>
-                    <div class="popular-section__item">
-                        <img src="../resources/images/moskvich.jpeg" alt="shopping" width="300px">
-                        <div class="__content">
-                            <h2 class="__number">03</h2>
-                            <h3 class="__title">Start of Production of New Muscovites</h3>
-                            <p class="__subtitle">What does the famous factory actually produce?</p>
-                        </div>
+                    <div class="blogs-section__container">
+                        <section class="blogs-section">
+                            <article class="blog grid-col-span-2 quote">
+                                <div class="user__info">
+                                  <div>
+                                    <img  src="../resources/images/users/Alex.jpg" alt="alex mazanov">
+                                  </div>
+                                  <div>
+                                    <h2 class="name">Alexey Mazanov</h2>
+                                    <p class="position">Verified Graduate</p>
+                                  </div>
+                                </div>
+                                <p>
+                                  I received a job offer mid-course, and the subjects I learned were current, if not more so,
+                                  in the company I joined. I honestly feel I got every penny's worth.
+                                </p>
+                                <p>
+                                  “ I was an EMT for many years before I joined the bootcamp. I've been looking to make a
+                                  transition and have heard some people who had an amazing experience here. I signed up
+                                  for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
+                                  The next 12 weeks was the best - and most grueling - time of my life. Since completing
+                                  the course, I've successfully switched careers, working as a Software Engineer at a VR startup. ”
+                                </p>
+                              </article>
+                              <article class="blog">
+                                <div class="user__info">
+                                  <div>
+                                    <img src="../resources/images/users/Stas.jpg" alt="stanislav povedenok">
+                                  </div>
+                                  <div>
+                                    <h2 class="name">Stanislav Povedenok</h2>
+                                    <p class="position">Verified Graduate</p>
+                                  </div>
+                                </div>
+                                <p>
+                                  The team was very supportive and kept me motivated
+                                </p>
+                                <p>
+                                  “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer
+                                  for a big company. This was one of the best investments I've made in myself. ”
+                                </p>
+                              </article>
+                              <article class="blog">
+                                <div class="user__info">
+                                  <div>
+                                    <img src="../resources/images/users/Islam.jpg" alt="Islam Kushkhov">
+                                  </div>
+                                  <div>
+                                    <h2 class="name">Islam Kushkhov</h2>
+                                    <p class="position">Verified Graduate</p>
+                                  </div>
+                                </div>
+                                <p>
+                                  An overall wonderful and rewarding experience</p>
+                                <p>
+                                  “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living
+                                  while doing something I love. ”
+                                </p>
+                              </article>
+                              <article class="blog grid-col-span-2">
+                                <div class="user__info">
+                                  <div>
+                                    <img class="border-primary-400" src="../resources/images/users/Timbo.jpg" alt="Timbo">
+                                  </div>
+                                  <div>
+                                    <h2 class="name">Timbo</h2>
+                                    <p class="position">Verified Graduate</p>
+                                  </div>
+                                </div>
+                                <p>
+                                  Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and
+                                  learning from their experiences was easy.
+                                </p>
+                                <p>
+                                  “ The staff seem genuinely concerned about my progress which I find really refreshing. The program
+                                  gave me the confidence necessary to be able to go out in the world and present myself as a capable
+                                  junior developer. The standard is above the rest. You will get the personal attention you need from
+                                  an incredible community of smart and amazing people. ”
+                                </p>
+                              </article>
+                              <article class="blog">
+                                <div class="user__info">
+                                  <div>
+                                    <img src="../resources/images/users/Giga.jpg" alt="Chad">
+                                  </div>
+                                  <div>
+                                    <h2 class="name">Chad</h2>
+                                    <p class="position">Verified Graduate</p>
+                                  </div>
+                                </div>
+                                <p>
+                                  Such a life-changing experience. Highly recommended!
+                                </p>
+                                <p>
+                                  “ Before joining the bootcamp, I've never written a line of code. I needed some structure from
+                                  professionals who can help me learn programming step by step. I was encouraged to enroll by a former
+                                  student of theirs who can only say wonderful things about the program. The entire curriculum and staff
+                                  did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team
+                                  project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial
+                                  could ever have. In fact, I've often referred to it during interviews as an example of my developent
+                                  experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers.
+                                  100% recommend! ”
+                                </p>
+                              </article>
+                        </section>
                     </div>
                 </div>
             </main>

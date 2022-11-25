@@ -1,42 +1,84 @@
-.header-container {
+.header__container {
+    position: relative;
+
     height: 70px;
 
-    nav {
+    margin-block: calc(var(--column-gap-default) / 2) calc(var(--row-gap-default) / 2);
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--column-gap-default);
+
+    img {
+        cursor: pointer;
+    }
+
+    .menu__container {
+        position: relative;
+        
         display: flex;
+        justify-content: center;
         align-items: center;
-        justify-content: space-between;
+
+        .chip-line {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%);
+
+            height: 20px;
+            width: 2px;
+
+            background: var(--clr-red);
+        }
 
         img {
-            cursor: pointer;
+            height: 30px;
         }
+    }
 
-        .__icons {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
+    .logo__container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
 
-            .chip-line {
-                height: 20px;
-                width: 2px;
-
-                background: var(--clr-red);
-            }
+        img {
+            height: 45px;
         }
+    }
+
+    .nav-list__container {
+        // Span from 3rd to 11th column counting from 0
+        grid-column: 4 / 12;
 
         .nav-list {
+            height: 100%;
+
             display: flex;
+            justify-content: flex-end;
             align-items: center;
             gap: 2rem;
-
+    
             li {
                 cursor: pointer;
-                transition: var(--transition-std);
-
+                transition: var(--transition-default);
+    
                 &:hover {
                     color: var(--clr-red);
-                    transform: scale(1.1);
+                    transform: scale(var(--scale-default));
                 }
             }
         }
     }
+
+    .user-icon__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 45px;
+        }
+    }
+    
 }
