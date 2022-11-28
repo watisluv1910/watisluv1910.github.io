@@ -1,0 +1,72 @@
+// !Utility Classes
+
+// * Grid span
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+.grid-col-span-3 {
+    grid-column: span 3;
+}
+
+.grid-col-span-4 {
+    grid-column: span 4;
+}
+
+.grid-col-span-5 {
+    grid-column: span 5;
+}
+
+.grid-col-span-7 {
+    grid-column: span 7;
+}
+
+.grid-col-span-10 {
+    grid-column: span 10;
+}
+
+.grid-row-span-2 {
+    grid-row: span 2;
+}
+
+.grid-row-span-3 {
+    grid-row: span 3;
+}
+
+.grid-row-span-4 {
+    grid-row: span 4;
+}
+
+.clickable {
+    cursor: pointer;
+
+    transition: var(--animation-transition-default);
+
+    &:hover {
+        color: var(--clr-primary);
+        text-shadow: var(--hover-elevation-shadow);
+    }
+
+    &:active {
+        color: var(--clr-on-surface-disabled);
+    }
+}
+
+.news-section {
+
+    & > article:hover {
+        background-color: var(--clr-surface-hover);
+        box-shadow: var(--hover-elevation-shadow);
+        transition: var(--animation-transition-default);
+        cursor: pointer;
+
+        .img-wrapper {
+            // background: linear-gradient(45deg, var(--clr-on-surface-hover-overlay), var(--clr-primary));
+            background: var(--clr-on-surface-high-emphasis);
+
+            img {
+                opacity: 0.5;
+            } 
+        } 
+    }
+}

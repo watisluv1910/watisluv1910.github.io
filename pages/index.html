@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-light">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="/resources/icons/sun-favicon/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/resources/icons/sun-favicon/sun-logo-black-round.png" type="image/x-icon">
         <link rel="stylesheet" href="/styles/css/index.css">
         <title>The Sun News</title>
     </head>
     <body>
         <div class="body-wrapper">
-            <header class="header__container">
+            <header id="main-header">
                 <div class="menu__container">
                     <div class="chip-line"></div>
                     <img src="../resources/icons/menu.svg" alt="menu" class="menu-toggle">
                 </div>
-                <div class="logo__container grid-col-span-2">
-                    <img src="../resources/icons/sun-black.png" alt="logo" class="main-logo">
+                <div class="logo__container grid-col-span-4">
+                    <img src="../resources/icons/sun-icon/sun-logo-black.png" alt="logo" class="main-logo">
                 </div>
                 <nav class="nav-list__container">
-                    <ul class="nav-list ff-subtitle-1" role="list">
-                        <li>Home</li>
-                        <li>Popular</li>
-                        <li>Categories</li>
-                        <li>Blogs</li>
-                        <li>About</li>
+                    <ul class="nav-list ff-body-1" role="list">
+                        <li class="clickable">Home</li>
+                        <li class="clickable">Popular</li>
+                        <li class="clickable">Categories</li>
+                        <li class="clickable">Blogs</li>
+                        <li class="clickable">About</li>
                     </ul>             
                 </nav>
                 <div class="user-icon__container">
@@ -34,9 +34,9 @@
             <main>
                 <div class="main-wrapper">
                   <div class="general-section__container">
-                    <section class="general-section">
+                    <section class="news-section general-section">
                       <article class="__item">
-                        <div class="img__container"> <!-- grid-col-span-2 -->
+                        <div class="img__container img-wrapper"> <!-- grid-col-span-2 -->
                           <img src="../resources/images/main-news/football-main.png" alt="football">
                         </div>
                         <div class="__info"> <!-- grid-col-span-3 -->
@@ -55,7 +55,7 @@
                               What devisions have been made this year?
                             </p>
                         </div>
-                        <div class="img__container">
+                        <div class="img__container img-wrapper">
                           <img src="../resources/images/main-news/summit-main.jpg" alt="summit">
                         </div>
                       </article>
@@ -67,14 +67,14 @@
                               It has iPad Air design and the cheapest price. What's the catch?
                             </p>
                         </div>
-                        <div class="img__container">
+                        <div class="img__container img-wrapper">
                           <img src="../resources/images/main-news/tech-main.jpg" alt="ipad">
                         </div>
                       </article>
                     </section>
                   </div>
                   <div class="latest-section__container grid-col-span-3">
-                      <section class="latest-section">
+                      <section class="news-section latest-section">
                           <div class="__header ff-headline-6">Latest Updates</div>
                           <article class="__item">
                             <div class="__info grid-col-span-2">
@@ -84,7 +84,7 @@
                               </div>
                               <div class="__title ff-body-2">The Greatest Deal Of The Twenty First Century</div>
                             </div>
-                            <div class="img__container">
+                            <div class="img__container img-wrapper">
                               <img src="../resources/images/latest-news/twitter-latest.png" alt="twitter">
                             </div>
                           </article>
@@ -96,7 +96,7 @@
                               </div>
                               <div class="__title ff-body-2">As Stocks Stagnate, Many Look To Currency</div>
                             </div>
-                            <div class="img__container">
+                            <div class="img__container img-wrapper">
                               <img src="../resources/images/latest-news/stock-latest.webp" alt="stock">
                             </div>
                           </article>
@@ -108,7 +108,7 @@
                               </div>
                               <div class="__title ff-body-2">Designers Use Tech To Make Futuristic Fabrics</div>
                             </div>
-                            <div class="img__container">
+                            <div class="img__container img-wrapper">
                               <img src="../resources/images/latest-news/factory-latest.jpg" alt="factory">
                             </div>
                           </article>
@@ -120,7 +120,7 @@
                               </div>
                               <div class="__title ff-body-2">Converting Farmland Into Housing In West Africa</div>
                             </div>
-                            <div class="img__container">
+                            <div class="img__container img-wrapper">
                               <img src="../resources/images/latest-news/house-latest.jpg" alt="house">
                             </div>
                           </article>
@@ -132,15 +132,16 @@
                               </div>
                               <div class="__title ff-body-2">The Best Noise-Cancelling Headphones</div>
                             </div>
-                            <div class="img__container">
+                            <div class="img__container img-wrapper">
                               <img src="../resources/images/latest-news/headphones-latest.jpg" alt="headphones">
                             </div>
                           </article>    
                       </section>
                   </div>
                   <div class="stock-section__container grid-col-span-2">
-                    <section class="stock-section">
+                    <section class="news-section stock-section">
                       <div class="__header">
+                        <div class="ff-headline-6">Stock Market</div>
                         <img src="../resources/images/stock-news/header/stock-stats.png" alt="stock-stats">
                       </div>
                       <article class="__item ff-body-2">
@@ -185,19 +186,12 @@
                           <p class="shift plus">+ 0.32%</p>
                         </div>
                       </article>
-                      <article class="__item ff-body-2"> <!-- TODO:Remove when width is smaller-->
-                        <p class="__title">DPI</p>
-                        <div class="__meta">
-                          <p class="price">1,390.13</p>
-                          <p class="shift minus">- 0.61%</p>
-                        </div>
-                      </article>
                     </section>
                   </div>
                   <div class="popular-section__container">
-                      <section class="popular-section">
+                      <section class="news-section popular-section">
                           <article class="popular-section__item">
-                            <div class="img__container">
+                            <div class="img__container img-wrapper">
                               <img src="../resources/images/popular-news/mall-popular.jpg" alt="dining">
                             </div>    
                             <div class="__content">
@@ -207,17 +201,19 @@
                             </div>
                           </article>
                           <article class="popular-section__item grid-col-span-2">
-                            <img src="../resources/images/popular-news/god-of-war-popular.jpeg" alt="god of war">
+                            <div class="img-wrapper">
+                              <img src="../resources/images/popular-news/god-of-war-popular.jpeg" alt="god of war">
+                            </div>
                             <div class="__content">
                               <p class="__category ff-overline">Games</p>
                               <div class="title-wrapper">
-                                <p class="__title ff-subtitle-1">God of War: Ragnarok Is a Truly Special Conclusion of Kratos' Norse Saga</p>
+                                <p class="__title ff-subtitle-1">God of War: Ragnarok Is a Special Conclusion of Kratos' Norse Saga</p>
                                 <p class="__subtitle ff-body-1">The Ragnarok is coming, and its events circle around Kratos and his son</p>
                               </div>
                             </div>
                           </article>
                           <article class="popular-section__item">
-                            <div class="img__container">
+                            <div class="img__container img-wrapper">
                               <img src="../resources/images/popular-news/veterans-popular.jpg" alt="veterans">
                             </div>
                             <div class="__content">
@@ -227,7 +223,7 @@
                             </div>
                           </article>
                           <article class="popular-section__item">
-                            <div class="img__container">
+                            <div class="img__container img-wrapper">
                               <img src="../resources/images/popular-news/great-wall-popular.jpg" alt="great wall">
                             </div>
                             <div class="__content">
@@ -239,154 +235,115 @@
                       </section>
                   </div>
                   <div class="additional-section__container">
-                    <section class="additional-section">
-                      <article class="additional-section__item video__container grid-col-span-7 grid-row-span-2">
-                        <div class="__poster img__container">
-                          <img src="../resources/images/additional-news/video-cover-additional.jpg" alt="rainy country">
-                          <div class="__controls">
-                            <div class="play-icon__container video-play-btn">
-                              <img src="../resources/icons/play-button-white.png" alt="play">
+                    <section class="news-section additional-section">
+                      <article class="additional-section__item grid-col-span-7 grid-row-span-2">
+                        <div class="video__container">
+                          <div class="__poster">
+                            <img src="../resources/images/additional-news/video-cover-additional.jpg" alt="rainy country">
+                            <div class="__controls">
+                              <div class="play-icon__container video-play-btn">
+                                <img src="../resources/icons/play-button-white.png" alt="play">
+                              </div>
+                              <div class="__title ff-subtitle-1">Rainy Country Official Clip Release</div>
                             </div>
-                            <div class="__title ff-subtitle-1">Rainy Country Official Clip</div>
                           </div>
-                        </div>
-                        <video controls preload="metadata" id="video-additional">
-                          <source src="../resources/videos/Noize MC — Страна Дождей.mp4" type="video/mp4">
-                          Video tag is not supported by your browser
-                        </video>
+                          <video controls preload="metadata" id="video-additional">
+                            <source src="../resources/videos/Noize MC — Страна Дождей.mp4" type="video/mp4">
+                            Video tag is not supported by your browser
+                          </video>
+                        </div>   
                       </article>
                       <article class="additional-section__item grid-col-span-3">
-                        <img src="../resources/images/additional-news/feminists-additional.jpg" alt="feminists">
+                        <div class="img-wrapper">
+                          <img src="../resources/images/additional-news/feminists-additional.jpg" alt="feminists">
+                        </div>
                         <div class="__content">
                           <div class="__meta">
                             <p class="__category ff-overline">Politics</p>
                             <p class="__time ff-body-2">1:37 pm</p>
                           </div>
-                          <p class="__title ff-body-2">Feminists Take On Partisanship</p>
+                          <p class="__title ff-subtitle-1">Feminists Take On Partisanship</p>
                         </div>
                       </article>
                       <article class="additional-section__item grid-col-span-3">
-                        <img src="../resources/images/additional-news/farmland-additional.jpg" alt="farmland">
+                        <div class="img-wrapper">
+                          <img src="../resources/images/additional-news/farmland-additional.jpg" alt="farmland">
+                        </div>
                         <div class="__content">
                           <div class="__meta">
                             <p class="__category ff-overline">Games</p>
                             <p class="__time ff-body-2">10:11 pm</p>
                           </div>
-                          <p class="__title ff-body-2">Farmland Bees In Short Supply</p>
+                          <p class="__title ff-subtitle-1">Farmland Bees In Short Supply</p>
                         </div>
                       </article>
                     </section>
                   </div>
-                    <div class="blogs-section__container">
-                        <section class="blogs-section">
-                            <article class="blog grid-col-span-2 quote">
-                                <div class="user__info">
-                                  <div>
-                                    <img  src="../resources/images/users/Alex.jpg" alt="alex mazanov">
-                                  </div>
-                                  <div>
-                                    <h2 class="name">Alexey Mazanov</h2>
-                                    <p class="position">Verified Graduate</p>
-                                  </div>
-                                </div>
-                                <p>
-                                  I received a job offer mid-course, and the subjects I learned were current, if not more so,
-                                  in the company I joined. I honestly feel I got every penny's worth.
-                                </p>
-                                <p>
-                                  “ I was an EMT for many years before I joined the bootcamp. I've been looking to make a
-                                  transition and have heard some people who had an amazing experience here. I signed up
-                                  for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
-                                  The next 12 weeks was the best - and most grueling - time of my life. Since completing
-                                  the course, I've successfully switched careers, working as a Software Engineer at a VR startup. ”
-                                </p>
-                              </article>
-                              <article class="blog">
-                                <div class="user__info">
-                                  <div>
-                                    <img src="../resources/images/users/Stas.jpg" alt="stanislav povedenok">
-                                  </div>
-                                  <div>
-                                    <h2 class="name">Stanislav Povedenok</h2>
-                                    <p class="position">Verified Graduate</p>
-                                  </div>
-                                </div>
-                                <p>
-                                  The team was very supportive and kept me motivated
-                                </p>
-                                <p>
-                                  “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer
-                                  for a big company. This was one of the best investments I've made in myself. ”
-                                </p>
-                              </article>
-                              <article class="blog">
-                                <div class="user__info">
-                                  <div>
-                                    <img src="../resources/images/users/Islam.jpg" alt="Islam Kushkhov">
-                                  </div>
-                                  <div>
-                                    <h2 class="name">Islam Kushkhov</h2>
-                                    <p class="position">Verified Graduate</p>
-                                  </div>
-                                </div>
-                                <p>
-                                  An overall wonderful and rewarding experience</p>
-                                <p>
-                                  “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living
-                                  while doing something I love. ”
-                                </p>
-                              </article>
-                              <article class="blog grid-col-span-2">
-                                <div class="user__info">
-                                  <div>
-                                    <img class="border-primary-400" src="../resources/images/users/Timbo.jpg" alt="Timbo">
-                                  </div>
-                                  <div>
-                                    <h2 class="name">Timbo</h2>
-                                    <p class="position">Verified Graduate</p>
-                                  </div>
-                                </div>
-                                <p>
-                                  Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and
-                                  learning from their experiences was easy.
-                                </p>
-                                <p>
-                                  “ The staff seem genuinely concerned about my progress which I find really refreshing. The program
-                                  gave me the confidence necessary to be able to go out in the world and present myself as a capable
-                                  junior developer. The standard is above the rest. You will get the personal attention you need from
-                                  an incredible community of smart and amazing people. ”
-                                </p>
-                              </article>
-                              <article class="blog">
-                                <div class="user__info">
-                                  <div>
-                                    <img src="../resources/images/users/Giga.jpg" alt="Chad">
-                                  </div>
-                                  <div>
-                                    <h2 class="name">Chad</h2>
-                                    <p class="position">Verified Graduate</p>
-                                  </div>
-                                </div>
-                                <p>
-                                  Such a life-changing experience. Highly recommended!
-                                </p>
-                                <p>
-                                  “ Before joining the bootcamp, I've never written a line of code. I needed some structure from
-                                  professionals who can help me learn programming step by step. I was encouraged to enroll by a former
-                                  student of theirs who can only say wonderful things about the program. The entire curriculum and staff
-                                  did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team
-                                  project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial
-                                  could ever have. In fact, I've often referred to it during interviews as an example of my developent
-                                  experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers.
-                                  100% recommend! ”
-                                </p>
-                              </article>
-                        </section>
-                    </div>
                 </div>
             </main>
             <footer>
-    
+              <div class="footer-content-wrapper ff-body-1">
+                <div class="head">
+                  <div class="logo__container">
+                    <a href="#"><img src="../resources/icons/sun-icon/sun-logo-black.png" alt="logo" width="200px"></a>
+                  </div>
+                  <div class="media__container">
+                    <a href="#"><img src="/resources/icons/social-media/facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="/resources/icons/social-media/instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="/resources/icons/social-media/vk.png" alt="vk"></a>
+                    <a href="#"><img src="/resources/icons/social-media/twitter.png" alt="twitter"></a>
+                    <a href="#"><img src="/resources/icons/social-media/youtube.png" alt="youtube"></a>
+                  </div>
+                </div>
+                <div class="main__content">
+                  <div class="boxes__container">
+                    <ul class="__box" role="list">
+                      <li class="__title ff-subtitle-1">Company</li>
+                      <li><a href="#" class="clickable">Home</a></li>
+                      <li><a href="#" class="clickable">Services</a></li>
+                      <li><a href="#" class="clickable">Contacts</a></li>
+                      <li><a href="#" class="clickable">About us</a></li>
+                    </ul>
+                    <ul class="__box" role="list">
+                      <li class="__title ff-subtitle-1">Categories</li>
+                      <li><a href="#" class="clickable">World</a></li>
+                      <li><a href="#" class="clickable">Local</a></li>
+                      <li><a href="#" class="clickable">Business</a></li>
+                      <li><a href="#" class="clickable">Health</a></li>
+                    </ul>
+                    <ul class="__box" role="list">
+                      <li class="__title ff-subtitle-1">Account</li>
+                      <li><a href="#" class="clickable">Profile</a></li>
+                      <li><a href="#" class="clickable">My account</a></li>
+                      <li><a href="#" class="clickable">Prefrences</a></li>
+                      <li><a href="#" class="clickable">Subcription</a></li>
+                    </ul>
+                    <ul class="__box" role="list">
+                      <li class="__title ff-subtitle-1">Edition</li>
+                      <li><a href="#" class="clickable">Ad Choices</a></li>
+                      <li><a href="#" class="clickable">Advertise with us</a></li>
+                      <li><a href="#" class="clickable">The Sun Store</a></li>
+                      <li><a href="#" class="clickable">Sitemap</a></li>
+                    </ul>
+                    <div class="__box input-box">
+                      <div class="__title ff-subtitle-1">Global Search</div>
+                      <div class="__input">
+                        <input type="text" placeholder="Find in Sun News..." class="ff-caption">
+                        <input type="button" value="Search" class="btn-default btn-footer-search clickable ff-button">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <div class="bottom__content ff-body-2">
+                    <span class="__copyright">Copyright © 2022 <a href="#" class="clickable">The Sun News Network.</a> All rights reserved.</span>
+                    <span class="__policy">
+                      <a href="#" class="clickable">Privacy policy</a>
+                      <a href="#" class="clickable">Terms & Condition</a>
+                    </span>
+                  </div>
+                </div>
+              </div>    
             </footer>
         </div>
 

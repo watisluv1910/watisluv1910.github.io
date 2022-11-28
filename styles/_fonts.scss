@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
 
 * {
-    color: var(--clr-black); // Default color
+    color: var(--clr-on-surface-high-emphasis); // Default color
 }
 
 .ff-headline-1, .ff-headline-3, .ff-headline-6 {
@@ -52,7 +52,7 @@
 }
 
 .ff-headline-5 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 24px;
     line-height: 32px;
     /* identical to box height, or 133% */
@@ -73,7 +73,7 @@
     font-family: 'Libre Franklin';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
     /* identical to box height, or 150% */
 
@@ -84,8 +84,8 @@
     font-family: 'Merriweather';
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .ff-body-1 {

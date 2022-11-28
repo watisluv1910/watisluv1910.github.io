@@ -1,0 +1,18 @@
+1)Landing page
+    a)Footer
+        1)General style -- Done
+        2)Pages for footer's links
+        3)Subscription stepper (maybe own page)
+    b)Responsivity
+    c)Links to themes and categories own pages
+    d)Menu
+    e)Short top app background
+    f)Image treatments -- Done
+    g)Add pressed background color for __item on devices with touch screen
+2)Single article page
+    a)Dialogs
+3)Other
+    a)General search
+    b)Dark/light themes
+
+    

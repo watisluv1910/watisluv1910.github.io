@@ -36,6 +36,10 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
+html { // TODO: rework this
+  background: var(--clr-surface);
+}
+
 /* Set core body defaults */
 body {
   min-height: 100vh;

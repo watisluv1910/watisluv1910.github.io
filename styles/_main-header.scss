@@ -1,21 +1,21 @@
-.header__container {
-    position: relative;
+header {
+    position: sticky;
+    top: -1px; // This is to prevent the header from jumping when it becomes sticky
 
     height: 70px;
 
-    margin-block: calc(var(--column-gap-default) / 2) calc(var(--row-gap-default) / 2);
+    margin-block: calc(var(--row-gap-default) / 2) calc(var(--row-gap-default) / 4);
+    padding-inline: var(--col-gap-default); // !
 
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: var(--column-gap-default);
+    grid-template-columns: repeat(var(--col-num-default), 1fr);
+    // !
+    // gap: var(--col-gap-default); 
 
-    img {
-        cursor: pointer;
-    }
+    z-index: 10;
+    background-color: var(--clr-surface);
 
-    .menu__container {
-        position: relative;
-        
+    .menu__container {        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -29,7 +29,7 @@
             height: 20px;
             width: 2px;
 
-            background: var(--clr-red);
+            background: var(--clr-primary);
         }
 
         img {
@@ -42,14 +42,17 @@
         justify-content: flex-start;
         align-items: center;
 
+        padding-inline: var(--col-gap-default); // !
+
         img {
-            height: 45px;
+            height: 30px;
         }
     }
 
     .nav-list__container {
-        // Span from 3rd to 11th column counting from 0
-        grid-column: 4 / 12;
+        // Span from 6th to 12th column
+        grid-column: 6 / var(--col-num-default);
+        padding-inline: var(--col-gap-default); // !
 
         .nav-list {
             height: 100%;
@@ -57,15 +60,18 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            gap: 2rem;
+            gap: calc(var(--col-gap-default) * 2);
     
             li {
-                cursor: pointer;
-                transition: var(--transition-default);
+                transition: var(--animation-transition-default);
     
                 &:hover {
-                    color: var(--clr-red);
-                    transform: scale(var(--scale-default));
+                    color: var(--clr-primary);
+                    transform: scale(var(--animation-upscale-default));
+                }
+                
+                &:active {
+                    color: var(--clr-on-surface-disabled);
                 }
             }
         }

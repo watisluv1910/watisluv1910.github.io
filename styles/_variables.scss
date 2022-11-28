@@ -1,13 +1,9 @@
 :root {
-    --width-mobile: 375px;
-    --width-tablet: 768px;
-    --width-desktop: 1440px;
-
+    // * Articles dividers parameters
     --divider-ver-width: 0.05rem;
     --divider-hor-height: 0.05rem;
 
-    --ff-primary: 'Inter', sans-serif;
-
+    // * Font weights
     --fw-400: 400;
     --fw-500: 500;
     --fw-600: 600;
@@ -15,26 +11,103 @@
     --fw-800: 800;
     --fw-900: 900;
 
+    // * Font sizes
     --fs-300: 0.6875rem;
     --fs-400: 0.8125rem;
     --fs-500: 1.25rem;
     --fs-600: 1.5rem;
     --fs-700: 2.25rem;
-    --fs-800: 3rem;
+    --fs-800: 3rem;    
 
+    // * Grid default styles
+    --col-num-default: var(--col-num-desktop);
+    --col-gap-default: var(--col-gap-desktop);
+    --row-gap-default: calc(var(--col-gap-default) * 2); // TODO: Rework to unified gap
+
+    // * Grid styles
+    --col-num-mobile: 4;
+    --col-num-tablet-portrait: 8;
+    --col-num-tablet-landscape: 12;
+    --col-num-laptop: 12;
+    --col-num-desktop: 12;
+
+    --col-gap-mobile: 1rem;
+    --col-gap-tablet-portrait: 1rem;
+    --col-gap-tablet-landscape: 1.5rem;
+    --col-gap-laptop: 1.5rem;
+    --col-gap-desktop: 1.5rem;
+
+    // * Grid breakpoints
+    --width-mobile: 360px;
+    --width-tablet-portrait: 600px;
+    --width-tablet-landscape: 905px;
+    --width-laptop: 1280px;
+    --width-desktop: 1440px;
+
+    // * Default animation parameters
+    --animation-upscale-default: 1.1;
+    --animation-downscale-default: 0.9;
+    --animation-transition-default: all 0.1s ease-in-out;
+}
+
+.theme-light {
+    // * Markup colors
     --clr-orange: #e9ab53;
     --clr-red: #f15e50;
-    --clr-white: #fff;
-    --clr-black: #000;
-    --clr-primary: #fffdfa;
-    --clr-grayblue-100: #c5c6ce;
-    --clr-grayblue-200: #5d5f79;
-    --clr-grayblue-300: #2d2f3e;
 
-    --column-gap-default: 1.5rem;
-    --row-gap-default: calc(var(--column-gap-default) * 2);
+    // * Main colors:
+    --clr-surface: #FFFFFF;
+    --clr-surface-statusbar: #EBEBEB;
+    --clr-surface-menu: #FFFFFF;
+    --clr-surface-hover: #FFFFFF;
+    --clr-surface-pressed: #EAEAEA;
+    --clr-on-surface-high-emphasis: rgba(0, 0, 0, 0.87);
+    --clr-on-surface-medium-emphasis: rgba(0, 0, 0, 0.6);
+    --clr-on-surface-disabled: rgba(56, 56, 56, 0.6);
+    --clr-on-surface-article-text: rgba(0, 0, 0, 0.6);
+    --clr-on-surface-overlay: rgba(0, 0, 0, 0.08);
+    --clr-on-surface-hover-overlay: rgba(105, 26, 255, 0.75);
+    --clr-primary: #6B38FB;
+    --clr-secondary: #00C4B4;
+    --clr-outline: rgba(0, 0, 0, 0.38);
+    --clr-outline-variant: rgba(0, 0, 0, 0.16);
+    --clr-gray: #E8E8E8;
+    --clr-scrim: rgba(255, 255, 255, 0.7);
+    --clr-page-surface-background: #F9F9F9;
 
-    --scale-default: 1.1;
+    // * Shadows:
+    --hover-elevation-shadow: 0px 0.5px 1.75px rgba(0, 0, 0, 0.039), 0px 1.85px 6.25px rgba(0, 0, 0, 0.19);
+    --menu-elevation-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    --file-cover-surface-elevation-shadow: 0px 0.12px 1.5px rgba(0, 0, 0, 0.039), 0px 1.35px 4.5px rgba(0, 0, 0, 0.19);
+}
 
-    --transition-default: all 0.1s ease-in-out;
+.theme-dark {
+    // * Markup colors
+    --clr-orange: #e9ab53;
+    --clr-red: #f15e50;
+
+    // * Main colors:
+    --clr-surface: #1c1c1c;
+    --clr-surface-statusbar: #1c1c1c;
+    --clr-surface-menu: #1c1c1c;
+    --clr-surface-hover: #1c1c1c;
+    --clr-surface-pressed: #1c1c1c;
+    --clr-on-surface-high-emphasis: rgba(255, 255, 255, 0.87);
+    --clr-on-surface-medium-emphasis: rgba(255, 255, 255, 0.6);
+    --clr-on-surface-disabled: rgba(255, 255, 255, 0.38);
+    --clr-on-surface-article-text: rgba(255, 255, 255, 0.38);
+    --clr-on-surface-overlay: rgba(0, 0, 0, 0.6);
+    --clr-on-surface-hover-overlay: rgba(187, 134, 252, 0.48);
+    --clr-primary: #BB86FC;
+    --clr-secondary: #70EFDE;
+    --clr-outline: rgba(255, 255, 255, 0.38);
+    --clr-outline-variant: rgba(255, 255, 255, 0.24);
+    --clr-gray: linear-gradient(0deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.18)), #1c1c1c;
+    --clr-scrim: rgba(0, 0, 0, 0.6);
+    --clr-page-surface-background: #1c1c1c;
+
+    // * Shadows:
+    --hover-elevation-shadow: 0px 0px 1px rgba(0, 0, 0, 0.039), 0px 0.5px 1.5px rgba(0, 0, 0, 0.19);
+    --menu-elevation-shadow: 0px 3px 13px rgba(0, 0, 0, 0.039), 0px 10.5px 36px rgba(0, 0, 0, 0.19);
+    --file-cover-surface-elevation-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
