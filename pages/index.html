@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="theme-light">
+<html lang="en" class="theme-dark">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,26 +10,29 @@
     </head>
     <body>
         <div class="body-wrapper">
-            <header id="main-header">
-                <div class="menu__container">
-                    <div class="chip-line"></div>
-                    <img src="../resources/icons/menu.svg" alt="menu" class="menu-toggle">
-                </div>
-                <div class="logo__container grid-col-span-4">
-                    <img src="../resources/icons/sun-icon/sun-logo-black.png" alt="logo" class="main-logo">
-                </div>
-                <nav class="nav-list__container">
-                    <ul class="nav-list ff-body-1" role="list">
-                        <li class="clickable">Home</li>
-                        <li class="clickable">Popular</li>
-                        <li class="clickable">Categories</li>
-                        <li class="clickable">Blogs</li>
-                        <li class="clickable">About</li>
-                    </ul>             
-                </nav>
-                <div class="user-icon__container">
-                    <img src="../resources/icons/person.svg" alt="account" class="user-logo">
-                </div>
+            <header id="main-header" class="rolled-up">
+              <div class="menu__container">
+                <div class="chip-line"></div>
+                <img src="../resources/icons/menu.svg" alt="menu" class="menu-toggle">
+              </div>
+              <div class="logo-small__container">
+                <img src="../resources/icons/sun-icon/sun-logo-small-black.png" alt="logo-small">
+              </div>
+              <div class="logo__container grid-col-span-4">
+                <img src="../resources/icons/sun-icon/sun-logo-black.png" alt="logo" class="main-logo">
+              </div>
+              <nav class="nav-list__container">
+                <ul class="nav-list ff-body-1" role="list">
+                  <li class="clickable">Home</li>
+                  <li class="clickable">Popular</li>
+                  <li class="clickable">Categories</li>
+                  <li class="clickable">Blogs</li>
+                  <li class="clickable">About</li>
+                </ul>             
+              </nav>
+              <div class="user-icon__container">
+                <img src="../resources/icons/person.svg" alt="account" class="user-logo">
+              </div>
             </header>
             <main>
                 <div class="main-wrapper">
@@ -348,6 +351,7 @@
         </div>
 
         <!-- Scripts: -->
+        <script src="../js/header-rollup.js"></script>
         <script src="../js/video-controls-main.js"></script>
     </body>
 </html>

@@ -34,6 +34,7 @@ ol[role="list"] {
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
+  overscroll-behavior: none;
 }
 
 html { // TODO: rework this

@@ -1,6 +1,5 @@
 // !Main classes
 .body-wrapper {
-  // padding-inline: var(--col-gap-default);
   color: var(--clr-on-surface-high-emphasis);
   background: var(--clr-surface);
 
@@ -60,6 +59,7 @@
     }
 
     .general-section__container {
+      position: relative;
       grid-column: 2 / span 5;
 
       .__item {
@@ -104,6 +104,18 @@
           width: calc(100% - var(--col-gap-default) * 2);
           border-bottom: var(--divider-hor-height) dotted var(--clr-outline);
         }
+      }
+
+      &::after { // TODO: remove in mobile layout and rework to classes
+        position: absolute;
+        top: calc(var(--row-gap-default) / 2);
+        right: 0;
+
+        height: calc(100% - var(--row-gap-default));
+
+        content: "";
+
+        border-right: var(--divider-ver-width) solid var(--clr-outline);
       }
     }
 
@@ -157,21 +169,15 @@
         }
       }
 
-      &::before, &::after { // TODO: remove in mobile layout
+      &::after { // TODO: remove in mobile layout and rework to classes
         position: absolute;
         top: calc(var(--row-gap-default) / 2);
+        right: 0;
+
+        height: calc(100% - var(--row-gap-default));
 
         content: "";
-        height: calc(100% - var(--row-gap-default));
-      }
 
-      &::before {
-        left: 0;
-        border-left: var(--divider-ver-width) solid var(--clr-outline);
-      }
-
-      &::after {
-        right: 0;
         border-right: var(--divider-ver-width) solid var(--clr-outline);
       }
     }

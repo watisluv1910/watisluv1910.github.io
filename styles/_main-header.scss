@@ -1,19 +1,17 @@
-header {
+#main-header {
     position: sticky;
-    top: -1px; // This is to prevent the header from jumping when it becomes sticky
+    top: var(--col-gap-default); // This is to prevent the header from jumping when it becomes sticky
 
-    height: 70px;
+    height: calc(var(--col-gap-default) * 2.5);
 
-    margin-block: calc(var(--row-gap-default) / 2) calc(var(--row-gap-default) / 4);
-    padding-inline: var(--col-gap-default); // !
+    margin-block: var(--col-gap-default) calc(var(--col-gap-default) / 2);
+    padding-inline: var(--col-gap-default);
 
     display: grid;
     grid-template-columns: repeat(var(--col-num-default), 1fr);
-    // !
-    // gap: var(--col-gap-default); 
 
     z-index: 10;
-    background-color: var(--clr-surface);
+    background: var(--clr-surface);
 
     .menu__container {        
         display: flex;
@@ -37,12 +35,20 @@ header {
         }
     }
 
+    .logo-small__container {
+        display: none;
+
+        img {
+            height: 30px;
+        }
+    }
+
     .logo__container {
         display: flex;
         justify-content: flex-start;
         align-items: center;
 
-        padding-inline: var(--col-gap-default); // !
+        padding-inline: var(--col-gap-default);
 
         img {
             height: 30px;
@@ -52,7 +58,7 @@ header {
     .nav-list__container {
         // Span from 6th to 12th column
         grid-column: 6 / var(--col-num-default);
-        padding-inline: var(--col-gap-default); // !
+        padding-inline: var(--col-gap-default);
 
         .nav-list {
             height: 100%;
@@ -83,8 +89,28 @@ header {
         align-items: center;
 
         img {
-            height: 45px;
+            height: calc(var(--col-gap-default) * 1.75);
         }
     }
-    
+
+    &.rolled-up {
+        display: flex;
+        gap: var(--col-gap-default);
+        width: fit-content;
+        background: var(--clr-surface-menu);
+
+        // clip-path: polygon(0% 0%, 100% 0, 100% 70%, 85% 100%, 0% 100%);
+
+        box-shadow: var(--menu-elevation-shadow);
+
+        .logo-small__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        [class*="container"]:nth-child(n + 3) {
+            display: none;
+        }
+    }
 }
