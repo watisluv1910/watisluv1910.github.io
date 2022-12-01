@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" class="theme-dark">
+<html lang="en" class="theme-light">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="/resources/icons/sun-favicon/sun-logo-black-round.png" type="image/x-icon">
+        <link rel="shortcut icon" href="/resources/icons/sun-favicon/sun-favicon-round.png" type="image/x-icon">
         <link rel="stylesheet" href="/styles/css/index.css">
         <title>The Sun News</title>
     </head>
     <body>
         <div class="body-wrapper">
-            <header id="main-header" class="rolled-up">
-              <div class="menu__container">
-                <div class="chip-line"></div>
-                <img src="../resources/icons/menu.svg" alt="menu" class="menu-toggle">
+            <header id="main-header">
+              <div class="menu-icon__container">
+                <img src="../resources/icons/interface/close-icon/close-icon-light.png" alt="close" class="menu-close clickable">
+                <img src="../resources/icons/interface/menu-icon/menu-icon-light.png" alt="menu" class="menu-toggle clickable">
               </div>
-              <div class="logo-small__container">
-                <img src="../resources/icons/sun-icon/sun-logo-small-black.png" alt="logo-small">
+              <div class="logo-small-icon__container">
+                <img src="../resources/icons/sun-icon/sun-logo-small-light.png" alt="logo-small" class="main-logo theme-switcher clickable">
               </div>
-              <div class="logo__container grid-col-span-4">
-                <img src="../resources/icons/sun-icon/sun-logo-black.png" alt="logo" class="main-logo">
+              <div class="logo-icon__container grid-col-start-2 grid-col-span-3">
+                <img src="../resources/icons/sun-icon/sun-logo-light.png" alt="logo" class="theme-switcher clickable">
               </div>
               <nav class="nav-list__container">
                 <ul class="nav-list ff-body-1" role="list">
@@ -31,12 +31,175 @@
                 </ul>             
               </nav>
               <div class="user-icon__container">
-                <img src="../resources/icons/person.svg" alt="account" class="user-logo">
+                <img src="../resources/icons/interface/user-icon/user-icon-light.png" alt="account" class="user-logo clickable">
               </div>
             </header>
             <main>
                 <div class="main-wrapper">
-                  <div class="general-section__container">
+                  <div class="side-menu__container">
+                    <div class="side-menu" aria-expanded="false">
+                      <div class="side-menu__title ff-headline-5">Front Page</div>
+                      <ul class="menu-list" role="list">
+                        <li class="menu__item">
+                          <div class="__info">
+                            <div class="expand-icon__container">
+                              <img src="../resources/icons/expand-icon-neutral.png" alt="expand">
+                            </div>
+                            <div class="menu__item__title clickable ff-subtitle-1">World</div>
+                          </div>
+                          <ul class="dropdown ff-body-1" role="list">
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Europe</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Asia</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">America</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Arctic</div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="menu__item">
+                          <div class="__info">                         
+                            <div class="expand-icon__container">
+                              <img src="../resources/icons/expand-icon-neutral.png" alt="expand">
+                            </div>
+                            <div class="menu__item__title clickable ff-subtitle-1">US</div>
+                          </div>
+                        </li>
+                        <li class="menu__item">
+                          <div class="__info">                 
+                            <div class="expand-icon__container">
+                              <img src="../resources/icons/expand-icon-neutral.png" alt="expand">
+                            </div>
+                            <div class="menu__item__title clickable ff-subtitle-1">Politics</div>
+                          </div>
+                        </li>
+                        <li class="menu__item">
+                          <div class="__info">
+                            <div class="expand-icon__container">
+                              <img src="../resources/icons/expand-icon-neutral.png" alt="expand">
+                            </div>
+                            <div class="menu__item__title clickable ff-subtitle-1">Business</div>
+                          </div>
+                        </li>
+                        <li class="menu__item">
+                          <div class="__info">
+                            <div class="expand-icon__container">
+                              <img src="../resources/icons/expand-icon-neutral.png" alt="expand">
+                            </div>
+                            <div class="menu__item__title clickable ff-subtitle-1">Tech</div>
+                          </div> 
+                          <ul class="dropdown ff-body-1" role="list">
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Topics</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Researches</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Meetings</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Sales</div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="menu__item">
+                          <div class="__info">
+                            <div class="expand-icon__container">
+                              <img src="../resources/icons/expand-icon-neutral.png" alt="expand">
+                            </div>
+                            <div class="menu__item__title clickable ff-subtitle-1">Science</div>
+                          </div>
+                          <ul class="dropdown ff-body-1" role="list">
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Topics</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Researches</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Meetings</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Sales</div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="menu__item">
+                          <div class="__info">
+                            <div class="expand-icon__container">
+                              <img src="../resources/icons/expand-icon-neutral.png" alt="expand">
+                            </div>
+                            <div class="menu__item__title clickable ff-subtitle-1">Sports</div>
+                          </div>
+                          <ul class="dropdown ff-body-1" role="list">
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Topics</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Researches</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Meetings</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Sales</div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="menu__item">
+                          <div class="__info">
+                            <div class="expand-icon__container">
+                              <img src="../resources/icons/expand-icon-neutral.png" alt="expand">
+                            </div>
+                            <div class="menu__item__title clickable ff-subtitle-1">Travel</div>
+                          </div>
+                          <ul class="dropdown ff-body-1" role="list">
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Topics</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Researches</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Meetings</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Sales</div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="menu__item">
+                          <div class="__info">
+                            <div class="expand-icon__container">
+                              <img src="../resources/icons/expand-icon-neutral.png" alt="expand">
+                            </div>
+                            <div class="menu__item__title clickable ff-subtitle-1">Culture</div>               
+                          </div>
+                          <ul class="dropdown ff-body-1" role="list">
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Topics</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Researches</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Meetings</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <div class="dropdown__item__title clickable">Sales</div>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>  
+                  <div class="general-section__container grid-col-start-2">
                     <section class="news-section general-section">
                       <article class="__item">
                         <div class="img__container img-wrapper"> <!-- grid-col-span-2 -->
@@ -191,7 +354,7 @@
                       </article>
                     </section>
                   </div>
-                  <div class="popular-section__container">
+                  <div class="popular-section__container grid-col-start-2 grid-col-span-fullscreen">
                       <section class="news-section popular-section">
                           <article class="popular-section__item">
                             <div class="img__container img-wrapper">
@@ -237,7 +400,7 @@
                           </article>
                       </section>
                   </div>
-                  <div class="additional-section__container">
+                  <div class="additional-section__container grid-col-start-2 grid-col-span-fullscreen">
                     <section class="news-section additional-section">
                       <article class="additional-section__item grid-col-span-7 grid-row-span-2">
                         <div class="video__container">
@@ -245,7 +408,7 @@
                             <img src="../resources/images/additional-news/video-cover-additional.jpg" alt="rainy country">
                             <div class="__controls">
                               <div class="play-icon__container video-play-btn">
-                                <img src="../resources/icons/play-button-white.png" alt="play">
+                                <img src="../resources/icons/interface/play-icon/play-icon-light.png" alt="play">
                               </div>
                               <div class="__title ff-subtitle-1">Rainy Country Official Clip Release</div>
                             </div>
@@ -285,10 +448,10 @@
                 </div>
             </main>
             <footer>
-              <div class="footer-content-wrapper ff-body-1">
+              <div class="footer-content-wrapper grid-col-start-2 grid-col-span-fullscreen ff-body-1">
                 <div class="head">
                   <div class="logo__container">
-                    <a href="#"><img src="../resources/icons/sun-icon/sun-logo-black.png" alt="logo" width="200px"></a>
+                    <a href="#"><img src="../resources/icons/sun-icon/sun-logo-light.png" alt="logo" width="200px"></a>
                   </div>
                   <div class="media__container">
                     <a href="#"><img src="/resources/icons/social-media/facebook.png" alt="facebook"></a>
@@ -301,18 +464,11 @@
                 <div class="main__content">
                   <div class="boxes__container">
                     <ul class="__box" role="list">
-                      <li class="__title ff-subtitle-1">Company</li>
+                      <li class="__title ff-subtitle-1">Navigation</li>
                       <li><a href="#" class="clickable">Home</a></li>
-                      <li><a href="#" class="clickable">Services</a></li>
-                      <li><a href="#" class="clickable">Contacts</a></li>
-                      <li><a href="#" class="clickable">About us</a></li>
-                    </ul>
-                    <ul class="__box" role="list">
-                      <li class="__title ff-subtitle-1">Categories</li>
-                      <li><a href="#" class="clickable">World</a></li>
-                      <li><a href="#" class="clickable">Local</a></li>
-                      <li><a href="#" class="clickable">Business</a></li>
-                      <li><a href="#" class="clickable">Health</a></li>
+                      <li><a href="#" class="clickable">Popular</a></li>
+                      <li><a href="#" class="clickable">Categories</a></li>
+                      <li><a href="#" class="clickable">Blogs</a></li>
                     </ul>
                     <ul class="__box" role="list">
                       <li class="__title ff-subtitle-1">Account</li>
@@ -322,14 +478,21 @@
                       <li><a href="#" class="clickable">Subcription</a></li>
                     </ul>
                     <ul class="__box" role="list">
+                      <li class="__title ff-subtitle-1">Company</li>
+                      <li><a href="#" class="clickable">Partnership</a></li>
+                      <li><a href="#" class="clickable">Services</a></li>
+                      <li><a href="#" class="clickable">Contacts</a></li>
+                      <li><a href="#" class="clickable">About us</a></li>
+                    </ul>
+                    <ul class="__box" role="list">
                       <li class="__title ff-subtitle-1">Edition</li>
-                      <li><a href="#" class="clickable">Ad Choices</a></li>
-                      <li><a href="#" class="clickable">Advertise with us</a></li>
-                      <li><a href="#" class="clickable">The Sun Store</a></li>
-                      <li><a href="#" class="clickable">Sitemap</a></li>
+                      <li><a href="#" class="clickable">International</a></li>
+                      <li><a href="#" class="clickable">United States</a></li>
+                      <li><a href="#" class="clickable">Arabic</a></li>
+                      <li><a href="#" class="clickable">Español</a></li>
                     </ul>
                     <div class="__box input-box">
-                      <div class="__title ff-subtitle-1">Global Search</div>
+                      <div class="__title ff-subtitle-1">News & Blogs</div>
                       <div class="__input">
                         <input type="text" placeholder="Find in Sun News..." class="ff-caption">
                         <input type="button" value="Search" class="btn-default btn-footer-search clickable ff-button">
@@ -351,7 +514,9 @@
         </div>
 
         <!-- Scripts: -->
+        <script src="../js/side-menu.js"></script>
         <script src="../js/header-rollup.js"></script>
         <script src="../js/video-controls-main.js"></script>
+        <script src="../js/theme-switcher.js"></script>
     </body>
 </html>

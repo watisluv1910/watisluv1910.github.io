@@ -1,11 +1,11 @@
 #main-header {
     position: sticky;
-    top: var(--col-gap-default); // This is to prevent the header from jumping when it becomes sticky
+    top: var(--gap-default); // This is to prevent the header from jumping when it becomes sticky
 
-    height: calc(var(--col-gap-default) * 2.5);
+    height: calc(var(--gap-default) * 2.5);
 
-    margin-block: var(--col-gap-default) calc(var(--col-gap-default) / 2);
-    padding-inline: var(--col-gap-default);
+    margin-block: var(--gap-default) calc(var(--gap-default) / 2);
+    padding-inline: var(--gap-default);
 
     display: grid;
     grid-template-columns: repeat(var(--col-num-default), 1fr);
@@ -13,29 +13,35 @@
     z-index: 10;
     background: var(--clr-surface);
 
-    .menu__container {        
+    .menu-icon__container {
+        position: relative;
+
         display: flex;
         justify-content: center;
         align-items: center;
 
-        .chip-line {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translate(-50%, -50%);
+        .menu-toggle {
+            height: 30px;
 
-            height: 20px;
-            width: 2px;
-
-            background: var(--clr-primary);
+            transition: var(--animation-transition-default);
         }
 
-        img {
-            height: 30px;
+        .menu-close {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+
+            height: 20px;
+
+            opacity: 0;
+            z-index: -1;
+
+            transition: var(--animation-transition-default);
         }
     }
 
-    .logo-small__container {
+    .logo-small-icon__container {
         display: none;
 
         img {
@@ -43,12 +49,12 @@
         }
     }
 
-    .logo__container {
+    .logo-icon__container {
         display: flex;
         justify-content: flex-start;
         align-items: center;
 
-        padding-inline: var(--col-gap-default);
+        padding-inline: var(--gap-default);
 
         img {
             height: 30px;
@@ -58,7 +64,7 @@
     .nav-list__container {
         // Span from 6th to 12th column
         grid-column: 6 / var(--col-num-default);
-        padding-inline: var(--col-gap-default);
+        padding-inline: var(--gap-default);
 
         .nav-list {
             height: 100%;
@@ -66,7 +72,7 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            gap: calc(var(--col-gap-default) * 2);
+            gap: calc(var(--gap-default) * 2);
     
             li {
                 transition: var(--animation-transition-default);
@@ -89,28 +95,49 @@
         align-items: center;
 
         img {
-            height: calc(var(--col-gap-default) * 1.75);
+            height: calc(var(--gap-default) * 1.5);
         }
     }
 
-    &.rolled-up {
-        display: flex;
-        gap: var(--col-gap-default);
-        width: fit-content;
-        background: var(--clr-surface-menu);
-
-        // clip-path: polygon(0% 0%, 100% 0, 100% 70%, 85% 100%, 0% 100%);
-
-        box-shadow: var(--menu-elevation-shadow);
-
-        .logo-small__container {
+    &:not(.menu-open) {
+        
+        &.rolled-up {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            gap: var(--gap-default);
+            width: fit-content;
+            background: var(--clr-surface-menu);
+    
+            box-shadow: var(--menu-elevation-shadow);
+    
+            .logo-small-icon__container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            [class*="container"]:nth-child(n + 3) {
+                display: none;
+            }
         }
+    }
+
+    &.menu-open.rolled-up {
+        background: transparent;
 
         [class*="container"]:nth-child(n + 3) {
             display: none;
+        }
+    }
+
+    &.menu-open {
+
+        .menu-toggle {
+            opacity: 0;
+            z-index: 10;
+        }
+
+        .menu-close {
+            opacity: 1;
         }
     }
 }

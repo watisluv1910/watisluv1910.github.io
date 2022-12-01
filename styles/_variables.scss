@@ -21,8 +21,7 @@
 
     // * Grid default styles
     --col-num-default: var(--col-num-desktop);
-    --col-gap-default: var(--col-gap-desktop);
-    --row-gap-default: calc(var(--col-gap-default) * 2); // TODO: Rework to unified gap
+    --gap-default: var(--gap-desktop);
 
     // * Grid styles
     --col-num-mobile: 4;
@@ -31,11 +30,11 @@
     --col-num-laptop: 12;
     --col-num-desktop: 12;
 
-    --col-gap-mobile: 1rem;
-    --col-gap-tablet-portrait: 1rem;
-    --col-gap-tablet-landscape: 1.5rem;
-    --col-gap-laptop: 1.5rem;
-    --col-gap-desktop: 1.5rem;
+    --gap-mobile: 1rem;
+    --gap-tablet-portrait: 1rem;
+    --gap-tablet-landscape: 1.5rem;
+    --gap-laptop: 1.5rem;
+    --gap-desktop: 1.5rem;
 
     // * Grid breakpoints
     --width-mobile: 360px;

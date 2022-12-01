@@ -31,14 +31,14 @@ ol[role="list"] {
   padding: 0;
 }
 
+html {
+  background: var(--clr-surface);
+}
+
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
   overscroll-behavior: none;
-}
-
-html { // TODO: rework this
-  background: var(--clr-surface);
 }
 
 /* Set core body defaults */

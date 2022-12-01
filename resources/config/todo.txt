@@ -2,15 +2,19 @@
     a)Footer
         1)General style -- Done
         2)Pages for footer's links
-        3)Subscription stepper (maybe own page)
-    b)Responsivity
+        3)Adaptivity
+    b)Adaptivity
     c)Links to themes and categories own pages
-    d)Menu
+    d)Menu -- Done only for large (add adaptivity)
     e)Short top app background -- Done
     f)Image treatments -- Done
     g)Add pressed background color for __item on devices with touch screen -- Done
+    h)Go to the unified gap standart -- 
+    i)Make two ore more animation variables with different timing
 2)Single article page
     a)Dialogs
 3)Other
     a)General search
-    b)Dark/light themes
+    b)Dark/light themes -- Done
+    c)Subscription stepper own page
+    d)Add urls to all links

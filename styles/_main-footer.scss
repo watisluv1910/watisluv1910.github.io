@@ -1,17 +1,20 @@
 footer {
     display: grid;
     grid-template-columns: repeat(var(--col-num-default), 1fr);
-    gap: var(--col-gap-default);
+    gap: var(--gap-default);
 
-    padding-block-start: calc(var(--col-gap-default) * 2);
-    padding-block-end: var(--col-gap-default);
+    margin-top: var(--gap-default);
+    padding-block: var(--gap-default);
 
     .footer-content-wrapper {
         position: relative;
-        grid-column: 2 / var(--col-num-default);
+        
+        grid-column-end: span calc(var(--col-num-default) - 2); // !Span full landscape
+
+        padding-inline: var(--gap-default);
 
         display: grid;
-        gap: var(--col-gap-default);
+        gap: var(--gap-default);
 
         .head {
             position: relative;
@@ -25,7 +28,7 @@ footer {
                 justify-content: center;
                 align-items: center;
 
-                gap: calc(var(--col-gap-default));
+                gap: var(--gap-default);
 
                 & > a img {
                     height: 2rem;
@@ -42,7 +45,7 @@ footer {
             &::after {
                 position: absolute;
                 right: 0;
-                bottom: calc(-1 * var(--row-gap-default) / 2);
+                bottom: calc(-1 * var(--gap-default));
 
                 height: 0;
                 width: 100%;
@@ -54,19 +57,19 @@ footer {
         }
     
         .main__content {
-            padding-block: calc(var(--row-gap-default) / 2);
+            padding-block: var(--gap-default);
 
             .boxes__container {
                 position: relative;
 
                 display: grid;
                 grid-template-columns: repeat(5, 1fr);
-                gap: var(--col-gap-default);
+                gap: var(--gap-default);
 
                 .__box {
                     display: flex;
                     flex-direction: column;
-                    gap: calc(var(--row-gap-default) / 4);
+                    gap: calc(var(--gap-default) / 2);
 
                     .__title {
                         position: relative;
@@ -88,14 +91,14 @@ footer {
 
                 .input-box .__input {
                     display: grid;
-                    gap: calc(var(--row-gap-default) / 4);
+                    gap: calc(var(--gap-default) / 2);
 
                     input[type="text"] {
                         height: 2rem;
 
                         font-size: 1rem;
                         color: var(--clr-on-surface-high-emphasis);
-                        background: var(--clr-surface);
+                        background: none;
 
                         border: none;
                         outline: none;
@@ -129,7 +132,7 @@ footer {
                     position: absolute;
     
                     right: 0;
-                    bottom: calc(-1 * var(--row-gap-default) / 2);
+                    bottom: calc(-1 * var(--gap-default));
     
                     height: 0;
                     width: 100%;
@@ -151,7 +154,7 @@ footer {
                 span {
                     display: flex;
                     align-items: center;
-                    gap: calc(var(--col-gap-default) / 2);
+                    gap: calc(var(--gap-default) / 2);
 
                     color: var(--clr-on-surface-medium-emphasis);
                 }
