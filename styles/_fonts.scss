@@ -140,3 +140,22 @@
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
+
+.ff-logo {
+    font-family: 'Chomsky';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+
+    letter-spacing: 0.5px;
+}
+
+@font-face {
+    font-family: 'Chomsky';
+    src: url('../../resources/fonts/Chomsky.woff2') format('woff2'),
+        url('../../resources/fonts/Chomsky.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

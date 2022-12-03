@@ -20,8 +20,11 @@ footer {
             position: relative;
 
             display: flex;
-            align-items: center;
+            flex-wrap: wrap;
             justify-content: space-between;
+            align-items: center;
+
+            gap: var(--gap-default);
 
             .media__container {
                 display: flex;
@@ -144,23 +147,81 @@ footer {
             }
         }
 
-        .bottom {
-            color: var(--clr-on-surface-high-emphasis);
+        .bottom .bottom__content {
+            display: flex;
+            justify-content: space-between;
+            gap: var(--gap-default);
 
-            .bottom__content {
+            span {
                 display: flex;
+                align-items: center;
+                gap: calc(var(--gap-default) / 2);
+
+                color: var(--clr-on-surface-medium-emphasis);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+
+    footer .footer-content-wrapper {
+        grid-column-end: span var(--col-num-default);
+
+        @media only screen and (min-width: 905px) {
+            grid-column-end: span calc(var(--col-num-default) - 2);
+        }
+        
+        .main__content .boxes__container {
+            grid-template-columns: repeat(calc(var(--col-num-default) / 2), 1fr);
+
+            @media only screen and (max-width: 375px) {
+                & .input-box {
+                    grid-column-end: span calc(var(--col-num-default) / 2);
+                }
+            }
+
+            @media only screen and (min-width: 600px) and (max-width: 750px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            @media only screen and (min-width: 905px) {
+                grid-template-columns: repeat(4, 1fr);
+
+                @media only screen and (min-width: 950px) {
+                    grid-template-columns: repeat(calc((var(--col-num-default) - 2) / 2), 1fr);
+                }
+            }
+        }
+
+        .bottom .bottom__content {
+            flex-direction: column;
+
+            span {
                 justify-content: space-between;
 
-                span {
-                    display: flex;
-                    align-items: center;
-                    gap: calc(var(--gap-default) / 2);
-
-                    color: var(--clr-on-surface-medium-emphasis);
+                &.__copyright {
+                    flex-direction: column;
                 }
             }
         }
     }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 905px) {
+    
+}
+
+@media only screen and (min-width: 905px) and (max-width: 1280px) {
+    
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+    
+}
+
+@media only screen and (min-width: 1440px) {
+    
 }
   
 //   @media (max-width: 900px) {

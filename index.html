@@ -15,13 +15,13 @@
                 <img src="../resources/icons/interface/close-icon/close-icon-light.png" alt="close" class="menu-close clickable">
                 <img src="../resources/icons/interface/menu-icon/menu-icon-light.png" alt="menu" class="menu-toggle clickable">
               </div>
-              <div class="logo-small-icon__container">
+              <div class="theme-toggle-icon__container">
                 <img src="../resources/icons/sun-icon/sun-logo-small-light.png" alt="logo-small" class="main-logo theme-switcher clickable">
               </div>
-              <div class="logo-icon__container grid-col-start-2 grid-col-span-3">
-                <img src="../resources/icons/sun-icon/sun-logo-light.png" alt="logo" class="theme-switcher clickable">
+              <div class="logo__container grid-col-start-2 grid-col-span-3">
+                <a href="#"><div class="ff-logo">The Sun News Global</div></a>
               </div>
-              <nav class="nav-list__container">
+              <div class="nav-list__container">
                 <ul class="nav-list ff-body-1" role="list">
                   <li class="clickable">Home</li>
                   <li class="clickable">Popular</li>
@@ -29,13 +29,14 @@
                   <li class="clickable">Blogs</li>
                   <li class="clickable">About</li>
                 </ul>             
-              </nav>
+              </div>
               <div class="user-icon__container">
                 <img src="../resources/icons/interface/user-icon/user-icon-light.png" alt="account" class="user-logo clickable">
               </div>
             </header>
             <main>
                 <div class="main-wrapper">
+                  <div class="side-menu-background"></div>
                   <div class="side-menu__container">
                     <div class="side-menu" aria-expanded="false">
                       <div class="side-menu__title ff-headline-5">Front Page</div>
@@ -237,6 +238,18 @@
                           <img src="../resources/images/main-news/tech-main.jpg" alt="ipad">
                         </div>
                       </article>
+                      <article class="__item">   
+                        <div class="__info grid-col-span-4">
+                            <div class="__category ff-overline">Tech</div>
+                            <div class="__title ff-subtitle-1">Apple announced new iPad 10th gen</div>
+                            <p class="__subtitle ff-body-1">
+                              It has iPad Air design and the cheapest price. What's the catch?
+                            </p>
+                        </div>
+                        <div class="img__container img-wrapper">
+                          <img src="../resources/images/main-news/tech-main.jpg" alt="ipad">
+                        </div>
+                      </article>
                     </section>
                   </div>
                   <div class="latest-section__container grid-col-span-3">
@@ -248,7 +261,7 @@
                                 <div class="__category ff-overline">Business</div>
                                 <p class="__time ff-body-2">2:31 am</p>
                               </div>
-                              <div class="__title ff-body-2">The Greatest Deal Of The Twenty First Century</div>
+                              <div class="__title ff-subtitle-1">The Greatest Deal Of The Twenty First Century</div>
                             </div>
                             <div class="img__container img-wrapper">
                               <img src="../resources/images/latest-news/twitter-latest.png" alt="twitter">
@@ -260,7 +273,7 @@
                                 <div class="__category ff-overline">World</div>
                                 <p class="__time ff-body-2">4:48 pm</p>
                               </div>
-                              <div class="__title ff-body-2">As Stocks Stagnate, Many Look To Currency</div>
+                              <div class="__title ff-subtitle-1">As Stocks Stagnate, Many Look To Currency</div>
                             </div>
                             <div class="img__container img-wrapper">
                               <img src="../resources/images/latest-news/stock-latest.webp" alt="stock">
@@ -272,7 +285,7 @@
                                 <div class="__category ff-overline">Tech</div>
                                 <p class="__time ff-body-2">11:28 pm</p>
                               </div>
-                              <div class="__title ff-body-2">Designers Use Tech To Make Futuristic Fabrics</div>
+                              <div class="__title ff-subtitle-1">Designers Use Tech To Make Futuristic Fabrics</div>
                             </div>
                             <div class="img__container img-wrapper">
                               <img src="../resources/images/latest-news/factory-latest.jpg" alt="factory">
@@ -284,7 +297,7 @@
                                 <div class="__category ff-overline">World</div>
                                 <p class="__time ff-body-2">3:22 pm</p>
                               </div>
-                              <div class="__title ff-body-2">Converting Farmland Into Housing In West Africa</div>
+                              <div class="__title ff-subtitle-1">Converting Farmland Into Housing In West Africa</div>
                             </div>
                             <div class="img__container img-wrapper">
                               <img src="../resources/images/latest-news/house-latest.jpg" alt="house">
@@ -296,38 +309,53 @@
                                 <div class="__category ff-overline">Local</div>
                                 <p class="__time ff-body-2">4:20 am</p>
                               </div>
-                              <div class="__title ff-body-2">The Best Noise-Cancelling Headphones</div>
+                              <div class="__title ff-subtitle-1">The Best Noise-Cancelling Headphones</div>
                             </div>
                             <div class="img__container img-wrapper">
                               <img src="../resources/images/latest-news/headphones-latest.jpg" alt="headphones">
                             </div>
-                          </article>    
+                          </article>
+                          <article class="__item">
+                            <div class="__info grid-col-span-2">
+                              <div class="__meta">
+                                <div class="__category ff-overline">Local</div>
+                                <p class="__time ff-body-2">4:20 am</p>
+                              </div>
+                              <div class="__title ff-subtitle-1">The Best Noise-Cancelling Headphones</div>
+                            </div>
+                            <div class="img__container img-wrapper">
+                              <img src="../resources/images/latest-news/headphones-latest.jpg" alt="headphones">
+                            </div>
+                          </article>
+                          <article class="__item btn">
+                            <a href="#" class="clickable ff-button">Read More</a>
+                          </article>
                       </section>
                   </div>
-                  <div class="stock-section__container grid-col-span-2">
+                  <div class="stock-section__container grid-col-start-2 grid-col-span-2">
                     <section class="news-section stock-section">
                       <div class="__header">
-                        <div class="ff-headline-6">Stock Market</div>
+                        <div class="__title ff-headline-6">Stock Market</div>
                         <img src="../resources/images/stock-news/header/stock-stats.png" alt="stock-stats">
                       </div>
                       <article class="__item ff-body-2">
                         <p class="__title">DJIA</p>
                         <div class="__meta">
-                          <p class="price">7,031.211</p>
+                          <p class="price">7,031</p>
                           <p class="shift minus">- 0.48%</p>
                         </div>
                       </article>
                       <article class="__item ff-body-2">
                         <p class="__title">SP</p>
                         <div class="__meta">
-                          <p class="price">1,967.84</p>
+                          <p class="price">1,967</p>
                           <p class="shift minus">- 0.00%</p>
                         </div>
                       </article>
                       <article class="__item ff-body-2">
                         <p class="__title">Nasdaq</p>
                         <div class="__meta">
-                          <p class="price">6,211.46</p>
+                          <p class="price">6,211</p>
                           <p class="shift plus">+ 0.52%</p>
                         </div>
                       </article>
@@ -336,6 +364,13 @@
                         <div class="__meta">
                           <p class="price">5,981</p>
                           <p class="shift plus">+ 1.16%</p>
+                        </div>
+                      </article>
+                      <article class="__item ff-body-2">
+                        <p class="__title">SP</p>
+                        <div class="__meta">
+                          <p class="price">1,967</p>
+                          <p class="shift minus">- 0.00%</p>
                         </div>
                       </article>
                       <article class="__item ff-body-2">
@@ -356,17 +391,17 @@
                   </div>
                   <div class="popular-section__container grid-col-start-2 grid-col-span-fullscreen">
                       <section class="news-section popular-section">
-                          <article class="popular-section__item">
+                          <article class="__item">
                             <div class="img__container img-wrapper">
                               <img src="../resources/images/popular-news/mall-popular.jpg" alt="dining">
                             </div>    
                             <div class="__content">
                                 <p class="__category ff-overline">Culture</p>
                                 <p class="__title ff-subtitle-1">Modern Dining Rituals For Singles</p>
-                                <p class="__subtitle ff-body-1">From the chef's table to restaurants for singles, modern cuisine gets creative</p>
+                                <p class="__subtitle ff-body-1">From the chef's table to restaurants for singles</p>
                             </div>
                           </article>
-                          <article class="popular-section__item grid-col-span-2">
+                          <article class="__item grid-col-span-2">
                             <div class="img-wrapper">
                               <img src="../resources/images/popular-news/god-of-war-popular.jpeg" alt="god of war">
                             </div>
@@ -378,7 +413,7 @@
                               </div>
                             </div>
                           </article>
-                          <article class="popular-section__item">
+                          <article class="__item">
                             <div class="img__container img-wrapper">
                               <img src="../resources/images/popular-news/veterans-popular.jpg" alt="veterans">
                             </div>
@@ -388,7 +423,7 @@
                               <p class="__subtitle ff-body-1">For those nearing retirement, benefits are not always guaranted</p>
                             </div>
                           </article>
-                          <article class="popular-section__item">
+                          <article class="__item">
                             <div class="img__container img-wrapper">
                               <img src="../resources/images/popular-news/great-wall-popular.jpg" alt="great wall">
                             </div>
@@ -402,7 +437,7 @@
                   </div>
                   <div class="additional-section__container grid-col-start-2 grid-col-span-fullscreen">
                     <section class="news-section additional-section">
-                      <article class="additional-section__item grid-col-span-7 grid-row-span-2">
+                      <article class="__item grid-col-span-7 grid-row-span-2">
                         <div class="video__container">
                           <div class="__poster">
                             <img src="../resources/images/additional-news/video-cover-additional.jpg" alt="rainy country">
@@ -419,7 +454,7 @@
                           </video>
                         </div>   
                       </article>
-                      <article class="additional-section__item grid-col-span-3">
+                      <article class="__item grid-col-span-3">
                         <div class="img-wrapper">
                           <img src="../resources/images/additional-news/feminists-additional.jpg" alt="feminists">
                         </div>
@@ -431,7 +466,7 @@
                           <p class="__title ff-subtitle-1">Feminists Take On Partisanship</p>
                         </div>
                       </article>
-                      <article class="additional-section__item grid-col-span-3">
+                      <article class="__item grid-col-span-3">
                         <div class="img-wrapper">
                           <img src="../resources/images/additional-news/farmland-additional.jpg" alt="farmland">
                         </div>
@@ -451,7 +486,7 @@
               <div class="footer-content-wrapper grid-col-start-2 grid-col-span-fullscreen ff-body-1">
                 <div class="head">
                   <div class="logo__container">
-                    <a href="#"><img src="../resources/icons/sun-icon/sun-logo-light.png" alt="logo" width="200px"></a>
+                    <a href="#"><div class="ff-logo">The Sun News Global</div></a>
                   </div>
                   <div class="media__container">
                     <a href="#"><img src="/resources/icons/social-media/facebook.png" alt="facebook"></a>
@@ -502,7 +537,11 @@
                 </div>
                 <div class="bottom">
                   <div class="bottom__content ff-body-2">
-                    <span class="__copyright">Copyright © 2022 <a href="#" class="clickable">The Sun News Network.</a> All rights reserved.</span>
+                    <span class="__copyright">
+                      Copyright © 2022
+                      <a href="#" class="clickable"> The Sun News Network. </a>
+                      All rights reserved.
+                    </span>
                     <span class="__policy">
                       <a href="#" class="clickable">Privacy policy</a>
                       <a href="#" class="clickable">Terms & Condition</a>

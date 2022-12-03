@@ -2,15 +2,17 @@
     a)Footer
         1)General style -- Done
         2)Pages for footer's links
-        3)Adaptivity
-    b)Adaptivity
+        3)Adaptivity -- DOne
+    b)Adaptivity -- Done
     c)Links to themes and categories own pages
-    d)Menu -- Done only for large (add adaptivity)
+    d)Menu -- Done
     e)Short top app background -- Done
     f)Image treatments -- Done
     g)Add pressed background color for __item on devices with touch screen -- Done
-    h)Go to the unified gap standart -- 
+    h)Go to the unified gap standart -- Done
     i)Make two ore more animation variables with different timing
+    j)Convert pixels to rem (unidy according to the video)
+    k)Change recently added news covers and titles (should be different)
 2)Single article page
     a)Dialogs
 3)Other

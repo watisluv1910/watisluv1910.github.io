@@ -96,3 +96,12 @@
         }
     }
 }
+
+@media only screen and (max-width: 905px) {
+    .grid-col-span-fullscreen {
+        grid-column-end: span var(--col-num-default);
+    }
+    .grid-col-start-2, .grid-col-start-3 {
+        grid-column-start: 1;
+    }
+}
