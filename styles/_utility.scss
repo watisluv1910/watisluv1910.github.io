@@ -27,7 +27,7 @@
 
 // * Grid column start
 .grid-col-start-2 {
-    grid-column-start: 2; // -2 for landscape orientarions (change in media)
+    grid-column-start: 2; // -2 for landscape orientarions (changed in media)
 }
 
 .grid-col-start-3 {
@@ -55,11 +55,11 @@
 .clickable {
     cursor: pointer;
 
-    transition: var(--animation-transition-default);
+    transition: var(--animation-transition-fast);
 
     &:hover {
         color: var(--clr-primary);
-        text-shadow: var(--hover-elevation-shadow);
+        text-shadow: var(--file-cover-surface-elevation-shadow);
     }
 
     &:active {
@@ -70,7 +70,7 @@
 .news-section {
 
     & > article {
-        transition: var(--animation-transition-default);
+        transition: var(--animation-transition-fast);
 
         &:hover {
             cursor: pointer;
@@ -97,7 +97,7 @@
     }
 }
 
-@media only screen and (max-width: 905px) {
+@media only screen and (max-width: $width-tablet-landscape) {
     .grid-col-span-fullscreen {
         grid-column-end: span var(--col-num-default);
     }

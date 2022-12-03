@@ -10,7 +10,7 @@ html {
   .btn-default {
     border: none;
 
-    transition: var(--animation-transition-default);
+    transition: var(--animation-transition-fast);
 
     &:hover {
       background: var(--clr-primary);
@@ -98,7 +98,7 @@ html {
               padding-block: 0.5rem;
   
               .expand-icon__container {
-                transition: all 0.25s ease-in-out;
+                transition: var(--animation-transition-medium);
 
                 img {
                   width: 30px;
@@ -107,7 +107,7 @@ html {
   
               &__title {
                 font-size: 16px;
-                font-weight: 600;
+                font-weight: var(--fw-600);
               }
             }
 
@@ -120,12 +120,12 @@ html {
 
               position: absolute;
               top: 0;
-              left: -1000px;
+              left: -100%;
 
               z-index: -1;
               opacity: 0;
 
-              transition: all 0.25s ease-in-out; // TODO: replace with animation variable
+              transition: var(--animation-transition-medium);
 
               &__item {
                 display: flex;
@@ -176,7 +176,7 @@ html {
         column-gap: var(--gap-default);
         row-gap: var(--gap-default);
 
-        padding: var(--gap-default); // TODO: remove in mobile layout 
+        padding: var(--gap-default);
 
         .__info {
           display: flex;
@@ -211,7 +211,7 @@ html {
         }
       }
 
-      &::after { // TODO: remove in mobile layout and rework to classes
+      &::after {
         position: absolute;
         top: var(--gap-default);
         right: 0;
@@ -231,7 +231,7 @@ html {
         display: grid;
 
         & > div, & > article {
-          padding-inline: var(--gap-default); // TODO: remove in mobile layout
+          padding-inline: var(--gap-default);
         }
         
         .__header {
@@ -241,10 +241,10 @@ html {
         .__item {
           position: relative;
 
-          padding-block: var(--gap-default); // TODO: remove in mobile layout;
+          padding-block: var(--gap-default);
 
           display: grid;
-          grid-template-columns: repeat(2, 1fr) 0.55fr; // TODO: Change in media queries
+          grid-template-columns: repeat(2, 1fr) 0.65fr;
           column-gap: var(--gap-default);
 
           .__info {
@@ -287,7 +287,7 @@ html {
         }
       }
 
-      &::after { // TODO: remove in mobile layout and rework to classes
+      &::after {
         position: absolute;
         top: var(--gap-default);
         right: 0;
@@ -306,7 +306,7 @@ html {
         display: grid;
         
         & > div, & > article {
-          padding-inline: var(--gap-default); // TODO: remove in mobile layout
+          padding-inline: var(--gap-default);
         }
   
         .__header {
@@ -346,7 +346,7 @@ html {
           gap: 0.5rem;
   
           .__title {
-            font-weight: 600; // TODO: rework
+            font-weight: var(--fw-600);
             letter-spacing: 0.5px;
           }
   
@@ -360,7 +360,7 @@ html {
             }
   
             .shift {   
-              font-weight: 600;
+              font-weight: var(--fw-600);
   
               &.minus {
                 color: var(--clr-primary);
@@ -392,8 +392,7 @@ html {
         grid-template-columns: repeat(5, 1fr);
 
         & > div, & > article {
-          padding-inline: var(--gap-default); // TODO: remove in mobile layout
-          padding-block: var(--gap-default);
+          padding: var(--gap-default);
         }
 
         .__item {
@@ -508,7 +507,7 @@ html {
                 // Semi-transparent white background without opacity
                 background: var(--clr-outline);
 
-                transition: var(--animation-transition-default);
+                transition: var(--animation-transition-slow);
 
                 .play-icon__container {
                   cursor: pointer;
@@ -585,7 +584,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: $width-tablet-portrait) {
   
   .body-wrapper .main-wrapper {
 
@@ -642,7 +641,7 @@ html {
 
       .__item:not(:first-child) .__info .__title {
 
-        @media only screen and (min-width: 400px) {
+        @media only screen and (min-width: calc($width-mobile + 25px)) {
           font-size: 22px;
         }
       }
@@ -769,7 +768,7 @@ html {
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 905px) {
+@media only screen and (min-width: $width-tablet-portrait) and (max-width: $width-tablet-landscape) {
   .body-wrapper .main-wrapper {
     
     .general-section__container .general-section {
@@ -780,7 +779,7 @@ html {
           max-height: 15rem;
         }
 
-        @media only screen and (max-width: 750px) {
+        @media only screen and (max-width: calc($width-tablet-portrait + 150px)) {
           grid-template-columns: repeat(3, 0.89fr) 1.33fr;
         }
       }
@@ -790,7 +789,7 @@ html {
 
       .__item {
 
-        @media only screen and (max-width: 750px) {
+        @media only screen and (max-width: calc($width-tablet-portrait + 150px)) {
           grid-template-columns: repeat(3, 1fr);
         }
       }
@@ -803,10 +802,10 @@ html {
 
         .__info .__title {
   
-          @media only screen and (max-width: 750px) {
+          @media only screen and (max-width: calc($width-tablet-portrait + 150px)) {
             font-size: 18px;
 
-            @media only screen and (max-width: 650px) {
+            @media only screen and (max-width: calc($width-tablet-portrait + 50px)) {
               font-size: 16px;
             }
           }
@@ -838,7 +837,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 905px) {
+@media only screen and (max-width: $width-tablet-landscape) {
 
   .body-wrapper .main-wrapper {
     padding-inline: 0;
@@ -849,7 +848,7 @@ html {
       .__item {
         grid-template-columns: repeat(4, 1fr);
 
-        @media only screen and (max-width: 350px) {
+        @media only screen and (max-width: calc($width-mobile - 25px)) {
           
           grid-template-columns: repeat(2, 1fr) 0.5fr 1.5fr;
         }
@@ -882,13 +881,13 @@ html {
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1280px) {
+@media only screen and (min-width: $width-tablet-portrait) and (max-width: $width-laptop) {
 
   .body-wrapper .main-wrapper {
 
     --col-num-current: var(--col-num-default);
 
-    @media only screen and (min-width: 905px) {
+    @media only screen and (min-width: $width-tablet-landscape) {
       --col-num-current: calc(var(--col-num-default) - 2);
     }
 
@@ -938,7 +937,7 @@ html {
             display: none;
           }
 
-          @media only screen and (max-width: 905px) {
+          @media only screen and (max-width: $width-tablet-landscape) {
             &:nth-child(n + 5) {
               display: none;
             }
@@ -953,7 +952,7 @@ html {
       .popular-section {
         grid-template-columns: repeat(calc(var(--col-num-current) / 2), 1fr);
 
-        @media only screen and (max-width: 905px) {
+        @media only screen and (max-width: $width-tablet-landscape) {
           
           .__item:first-child {
             display: none;
@@ -964,7 +963,7 @@ html {
   }
 }
 
-@media only screen and (min-width: 905px) and (max-width: 1280px) {
+@media only screen and (min-width: $width-tablet-landscape) and (max-width: $width-laptop) {
   .body-wrapper .main-wrapper {
 
     .general-section__container {
@@ -985,7 +984,7 @@ html {
     .latest-section__container {
       grid-column-end: span 4;
 
-      @media only screen and (max-width: 1150px) {
+      @media only screen and (max-width: calc($width-tablet-landscape + 250px)) {
 
         .__item:not(:first-child) {
           grid-template-columns: repeat(3, 1fr);
@@ -1003,7 +1002,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: $width-laptop) {
 
   .body-wrapper .main-wrapper {
 
@@ -1051,12 +1050,20 @@ html {
   }
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+// // * smartphones, touchscreens
+// @media (hover: none) and (pointer: coarse) {
+//   // Remove hover shadow on touchscreens
+//   .body-wrapper .main-wrapper {
+//     --hover-elevation-shadow: none;
+//   }
+// }
+
+@media only screen and (min-width: $width-laptop) and (max-width: $width-desktop) {
   .body-wrapper .main-wrapper {
 
     .latest-section__container {
 
-      @media only screen and (max-width: 1350px) {
+      @media only screen and (max-width: calc($width-laptop + 75px)) {
         .latest-section .__item:nth-child(6) {
           display: none;
         }
@@ -1088,7 +1095,7 @@ html {
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: $width-laptop) {
   .body-wrapper .main-wrapper .stock-section__container {
 
     &.grid-col-start-2, &.grid-col-start-3 {

@@ -36,18 +36,20 @@
     --gap-laptop: 1.5rem;
     --gap-desktop: 1.5rem;
 
-    // * Grid breakpoints
-    --width-mobile: 360px;
-    --width-tablet-portrait: 600px;
-    --width-tablet-landscape: 905px;
-    --width-laptop: 1280px;
-    --width-desktop: 1440px;
-
     // * Default animation parameters
     --animation-upscale-default: 1.1;
     --animation-downscale-default: 0.9;
-    --animation-transition-default: all 0.1s ease-in-out;
+    --animation-transition-fast: all 0.1s ease-in-out;
+    --animation-transition-medium: all 0.2s ease-in-out;
+    --animation-transition-slow: all 0.3s ease-in-out;
 }
+
+// * Grid breakpoints
+$width-mobile: 375px;
+$width-tablet-portrait: 600px;
+$width-tablet-landscape: 905px;
+$width-laptop: 1280px;
+$width-desktop: 1440px;
 
 .theme-light {
     // * Markup colors
@@ -111,35 +113,35 @@
     --file-cover-surface-elevation-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: $width-tablet-portrait) {
     :root {
         --col-num-default: var(--col-num-mobile);
         --gap-default: var(--gap-mobile);
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 905px) {
+@media only screen and (min-width: $width-tablet-portrait) and (max-width: $width-tablet-landscape) {
     :root {
         --col-num-default: var(--col-num-tablet-portrait);
         --gap-default: var(--gap-tablet-portrait);
     }
 }
 
-@media only screen and (min-width: 905px) and (max-width: 1280px) {
+@media only screen and (min-width: $width-tablet-landscape) and (max-width: $width-laptop) {
     :root {
         --col-num-default: var(--col-num-tablet-landscape);
         --gap-default: var(--gap-tablet-landscape);
     }
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+@media only screen and (min-width: $width-laptop) and (max-width: $width-desktop) {
     :root {
         --col-num-default: var(--col-num-laptop);
         --gap-default: var(--gap-laptop);
     }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: $width-desktop) {
     :root {
         --col-num-default: var(--col-num-desktop);
         --gap-default: var(--gap-desktop);

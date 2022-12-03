@@ -9,7 +9,7 @@ footer {
     .footer-content-wrapper {
         position: relative;
         
-        grid-column-end: span calc(var(--col-num-default) - 2); // !Span full landscape
+        grid-column-end: span calc(var(--col-num-default) - 2);
 
         padding-inline: var(--gap-default);
 
@@ -36,7 +36,7 @@ footer {
                 & > a img {
                     height: 2rem;
                     border-radius: 50%;
-                    transition: var(--animation-transition-default);
+                    transition: var(--animation-transition-medium);
 
                     &:hover {
                         transform: scale(var(--animation-upscale-default));
@@ -107,10 +107,10 @@ footer {
                         outline: none;
                         border-bottom: calc(var(--divider-hor-height) * 2) solid var(--clr-on-surface-high-emphasis);
 
-                        transition: var(--animation-transition-default);
+                        transition: var(--animation-transition-fast);
                         
                         &:focus {
-                            border-bottom: calc(var(--divider-hor-height) * 2) solid var(--clr-secondary);
+                            border-bottom-color: var(--clr-secondary);
                         }
                     }
 
@@ -168,27 +168,27 @@ footer {
     footer .footer-content-wrapper {
         grid-column-end: span var(--col-num-default);
 
-        @media only screen and (min-width: 905px) {
+        @media only screen and (min-width: $width-tablet-landscape) {
             grid-column-end: span calc(var(--col-num-default) - 2);
         }
         
         .main__content .boxes__container {
             grid-template-columns: repeat(calc(var(--col-num-default) / 2), 1fr);
 
-            @media only screen and (max-width: 375px) {
+            @media only screen and (max-width: $width-mobile) {
                 & .input-box {
                     grid-column-end: span calc(var(--col-num-default) / 2);
                 }
             }
 
-            @media only screen and (min-width: 600px) and (max-width: 750px) {
+            @media only screen and (min-width: $width-tablet-portrait) and (max-width: 750px) {
                 grid-template-columns: repeat(3, 1fr);
             }
             
-            @media only screen and (min-width: 905px) {
+            @media only screen and (min-width: $width-tablet-landscape) {
                 grid-template-columns: repeat(4, 1fr);
 
-                @media only screen and (min-width: 950px) {
+                @media only screen and (min-width: calc($width-tablet-landscape + 50px)) {
                     grid-template-columns: repeat(calc((var(--col-num-default) - 2) / 2), 1fr);
                 }
             }
@@ -207,72 +207,3 @@ footer {
         }
     }
 }
-
-@media only screen and (min-width: 600px) and (max-width: 905px) {
-    
-}
-
-@media only screen and (min-width: 905px) and (max-width: 1280px) {
-    
-}
-
-@media only screen and (min-width: 1280px) and (max-width: 1440px) {
-    
-}
-
-@media only screen and (min-width: 1440px) {
-    
-}
-  
-//   @media (max-width: 900px) {
-//     footer .content .link-boxes{
-//       flex-wrap: wrap;
-//     }
-//     footer .content .link-boxes .input-box{
-//       width: 40%;
-//       margin-top: 10px;
-//     }
-//   }
-
-//   @media (max-width: 700px){
-//     footer{
-//       position: relative;
-//     }
-//     .content .top .logo-details{
-//       font-size: 26px;
-//     }
-//     .content .top .media-icons a{
-//       height: 35px;
-//       width: 35px;
-//       font-size: 14px;
-//       line-height: 35px;
-//     }
-//     footer .content .link-boxes .box{
-//       width: calc(100% / 3 - 10px);
-//     }
-//     footer .content .link-boxes .input-box{
-//       width: 60%;
-//     }
-//     .bottom-details .bottom_text span,
-//     .bottom-details .bottom_text a{
-//       font-size: 12px;
-//     }
-//   }
-
-//   @media (max-width: 520px){
-//     footer::before{
-//       top: 145px;
-//     }
-//     footer .content .top{
-//       flex-direction: column;
-//     }
-//     .content .top .media-icons{
-//       margin-top: 16px;
-//     }
-//     footer .content .link-boxes .box{
-//       width: calc(100% / 2 - 10px);
-//     }
-//     footer .content .link-boxes .input-box{
-//       width: 100%;
-//     }
-//   }

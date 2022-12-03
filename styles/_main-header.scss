@@ -24,7 +24,7 @@
             height: 30px;
             min-width: 30px;
 
-            transition: var(--animation-transition-default);
+            transition: var(--animation-transition-medium);
         }
 
         .menu-close {
@@ -39,7 +39,7 @@
             opacity: 0;
             z-index: -1;
 
-            transition: var(--animation-transition-default);
+            transition: var(--animation-transition-medium);
         }
     }
 
@@ -75,7 +75,7 @@
             gap: calc(var(--gap-default) * 1.5);
     
             li {
-                transition: var(--animation-transition-default);
+                transition: var(--animation-transition-fast);
     
                 &:hover {
                     color: var(--clr-primary);
@@ -149,7 +149,7 @@
     }
 }
 
-@media only screen and (max-width: 600px) and (orientation: portrait) {
+@media only screen and (max-width: $width-tablet-portrait) {
     #main-header {
         height: fit-content;
 
@@ -178,7 +178,7 @@
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 905px) {
+@media only screen and (min-width: $width-tablet-portrait) and (max-width: $width-tablet-landscape) {
     #main-header {
         height: fit-content;
 
@@ -205,13 +205,13 @@
             }
         }
 
-        @media screen and (min-width: 650px) {
+        @media screen and (min-width: calc($width-tablet-portrait + 50px)) {
             .nav-list__container .nav-list li:nth-child(2) {
                 display: block;
             }
         }
 
-        @media screen and (min-width: 750px) {
+        @media screen and (min-width: calc($width-tablet-portrait + 150px)) {
             .nav-list__container .nav-list li:nth-child(3) {
                 display: block;
             }
@@ -219,7 +219,7 @@
     }
 }
 
-@media only screen and (min-width: 905px) and (max-width: 1280px) {
+@media only screen and (min-width: $width-tablet-landscape) and (max-width: $width-laptop) {
     #main-header {
 
         .logo__container {
@@ -248,7 +248,7 @@
     }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: $width-laptop) {
 
     #main-header.menu-open {
         position: static;
@@ -257,7 +257,7 @@
         .theme-toggle-icon__container  {
             position: fixed;
 
-            @media only screen and (max-width: 905px) {
+            @media only screen and (max-width: $width-tablet-landscape) {
                 top: var(--gap-default);
             }
 
@@ -283,7 +283,3 @@
         }
     }
 }
-
-@media only screen and (min-width: 1280px) and (max-width: 1440px) {}
-
-@media only screen and (min-width: 1440px) {}
