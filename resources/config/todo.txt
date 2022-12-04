@@ -11,7 +11,8 @@
     g)Add pressed background color for __item on devices with touch screen -- Done
     h)Go to the unified gap standart -- Done
     i)Make two ore more animation variables with different timing -- Done
-    k)Change recently added news covers and titles (should be different)
+    k)Change recently added news covers and titles (should be different) -- Done
+    l)Download all fonts locally, rework fonts
 2)Single article page
     a)Dialogs
 3)Other

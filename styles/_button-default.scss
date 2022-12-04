@@ -1,0 +1,18 @@
+.btn-default {
+    border: none;
+    transition: var(--animation-transition-fast);
+
+    &:hover {
+        background: var(--clr-primary);
+        transform: scale(var(--animation-upscale-default));
+        box-shadow: var(--hover-elevation-shadow);
+    }
+
+    &:active {
+        box-shadow: none;
+    }
+
+    &:disabled {
+        background: var(--clr-on-surface-disabled);
+    }
+}

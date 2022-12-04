@@ -15,6 +15,11 @@ menuOpen.addEventListener('click', function() { // TODO: Make available only in 
         // when the menu is open for each element
         // with the class .grid-col-start-2
 
+        document.querySelectorAll('.grid-col-start-3').forEach((el) => {
+            el.classList.remove('grid-col-start-3');
+            el.classList.add('grid-col-start-4');
+        });
+
         document.querySelectorAll('.grid-col-start-2').forEach((el) => {
             el.classList.remove('grid-col-start-2');
             el.classList.add('grid-col-start-3');
@@ -26,6 +31,11 @@ menuOpen.addEventListener('click', function() { // TODO: Make available only in 
         document.querySelectorAll('.grid-col-start-3').forEach((el) => {
             el.classList.remove('grid-col-start-3');
             el.classList.add('grid-col-start-2');
+        });
+
+        document.querySelectorAll('.grid-col-start-4').forEach((el) => {
+            el.classList.remove('grid-col-start-4');
+            el.classList.add('grid-col-start-3');
         });
     }
 });

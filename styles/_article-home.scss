@@ -1,0 +1,234 @@
+.main-wrapper { // ! Design for mobile first
+    display: grid;
+    grid-template-columns: repeat(var(--col-num-default), 1fr);
+    // row-gap: var(--gap-default); // TODO: Add from tablet landscape
+    --col-num-current: var(--col-num-default);
+
+    @media only screen and (min-width: $width-tablet-landscape) {
+        --col-num-current: calc(var(--col-num-default) - 2);
+    }
+
+    // padding-inline: var(--gap-default); // TODO: Add from tablet landscape
+    background: var(--clr-surface);
+
+    .__poster { // TODO: rework img and caption
+        grid-column-end: span var(--col-num-current);
+
+        display: grid;
+        gap: calc(var(--gap-default) / 3);
+
+        @media only screen and (max-width: $width-tablet-landscape) {
+
+            figcaption {
+                display: none;
+            }
+        }
+
+        figcaption {
+            color: var(--clr-on-surface-medium-emphasis);
+
+            @media only screen and (min-width: $width-laptop) {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .__info {
+        grid-column-end: span var(--col-num-current);
+        display: grid;
+
+        .__general-info {
+            padding: var(--gap-default);
+            display: grid;
+            row-gap: calc(var(--gap-default) / 3);
+
+            .__overline {
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+    
+                .divider {
+                    color: var(--clr-on-surface-article-text);
+                }
+            }
+    
+            .__title {
+                padding-bottom: calc(var(--gap-default) / 3);
+    
+                font-style: normal;
+                font-size: 29px;
+                line-height: 120%;
+            }
+    
+            .__subtitle {
+                color: var(--clr-on-surface-medium-emphasis);
+    
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 157%;
+            }
+        }
+
+        .__meta {
+            display: flex;
+            align-items: center;
+            gap: calc(var(--gap-default) / 2);
+
+            padding-inline: var(--gap-default);
+            
+            .author__photo {
+                position: relative;
+                width: 40px;
+
+                img {
+                    border-radius: 50%;
+                }
+
+                &::before {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    content: '';
+                    
+                    height: calc(100% + 2px);
+                    width: calc(100% + 2px);
+
+                    border-radius: 50%;
+                    background: var(--clr-gray);
+                }
+            }
+
+            & > p {
+                margin-left: calc(var(--gap-default) / 4);
+                color: var(--clr-on-surface-medium-emphasis);
+                font-size: 18px;
+                line-height: 130%;
+                letter-spacing: 0;
+            }
+
+            .author__name {
+                font-size: 18px;
+                line-height: 140%;
+                letter-spacing: 0.2px;
+            }
+        }
+    }
+
+    .__text-wrapper {
+        grid-column-end: span var(--col-num-current);
+
+        display: grid;
+        row-gap: calc(var(--gap-default) * 2);
+
+        padding: calc(var(--gap-default) * 2) var(--gap-default);
+
+        @media only screen and (min-width: $width-tablet-landscape) {
+            grid-column-end: span calc(var(--col-num-current) - 2);
+        }
+
+        & > p {
+            color: var(--clr-on-surface-article-text);
+            font-size: 16px;
+            line-height: 172%;
+            letter-spacing: 0.1px;
+
+            clear: left;
+
+            &:first-child::first-letter {
+                padding: 3px;
+                margin-right: 5px;
+
+                float: left;
+
+                color: var(--clr-on-surface-high-emphasis);
+                font-family: 'Chomsky';
+                font-size: 475%;
+                line-height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $width-tablet-landscape) {
+
+    .main-wrapper {
+        padding-inline: var(--gap-default);
+        
+        .__poster {
+            grid-column-end: span 6;
+            padding-inline-start: var(--gap-default);
+        }
+
+        .__info {
+            grid-column-end: span 4;
+            
+            .__general-info {
+                padding-top: 0;
+
+                @media screen and (min-width: $width-laptop) {
+
+                    .__title {
+                        font-size: 40px;
+                        line-height: 125%;
+                    }
+
+                    .__subtitle {
+                        font-size: 16px;
+                        line-height: 162%;
+                    }
+
+                    @media screen and (min-width: $width-desktop) {
+                        
+                        .__title {
+                            font-size: 48px;
+                            line-height: 120%;
+                        }
+    
+                        .__subtitle {
+                            font-size: 18px;
+                            line-height: 160%;
+                        }
+                    }
+                } 
+            }
+
+            .__meta {
+
+                @media screen and (min-width: $width-laptop) {
+
+                    .author__photo {
+                        width: 44px;
+                    }
+
+
+                    @media screen and (min-width: $width-desktop) {
+
+                        .author__photo {
+                            width: 48px;
+                        }
+
+                        .author__name {
+                            font-size: 20px;
+                            line-height: 140%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .__text-wrapper > p {
+
+            @media screen and (min-width: $width-laptop) {
+                font-size: 20px;
+                line-height: 180%;
+
+                @media screen and (min-width: $width-desktop) {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
