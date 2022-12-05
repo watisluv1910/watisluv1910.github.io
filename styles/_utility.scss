@@ -63,7 +63,7 @@
 
     &:hover {
         color: var(--clr-primary);
-        // text-shadow: var(--file-cover-surface-elevation-shadow);
+        text-shadow: var(--file-cover-surface-elevation-shadow);
     }
 
     &:active {
@@ -118,11 +118,15 @@
     }
 }
 
-.dialog {
+.logo__container {
+    cursor: pointer;
+}
+
+.dialog-trigger {
     position: relative;
     cursor: pointer;
     
-    &::after {
+    &::before {
         position: absolute;
         bottom: -1px;
         left: 0;
@@ -133,6 +137,13 @@
         height: 2px;
 
         background-color: var(--clr-outline);
+    }
+
+    &:hover {
+
+        &::before {
+            background-color: var(--clr-primary);
+        }
     }
 }
 
