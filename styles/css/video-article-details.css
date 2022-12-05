@@ -178,6 +178,12 @@
   --animation-transition-fast: all 0.1s ease-in-out;
   --animation-transition-medium: all 0.2s ease-in-out;
   --animation-transition-slow: all 0.3s ease-in-out;
+  --animation-duration-fast: 0.25s;
+  --animation-duration-medium: 0.5s;
+  --animation-duration-slow: 0.75s;
+  --animation-delay-fast: 0.1s;
+  --animation-delay-medium: 0.2s;
+  --animation-delay-slow: 0.3s;
 }
 
 .theme-light {
@@ -195,6 +201,7 @@
   --clr-on-surface-overlay: rgba(0, 0, 0, 0.08);
   --clr-on-surface-hover-overlay: rgba(105, 26, 255, 0.75);
   --clr-primary: #6B38FB;
+  --clr-primary-darken: #3f1f97;
   --clr-secondary: #00C4B4;
   --clr-outline: rgba(0, 0, 0, 0.38);
   --clr-outline-variant: rgba(0, 0, 0, 0.16);
@@ -221,6 +228,7 @@
   --clr-on-surface-overlay: rgba(0, 0, 0, 0.6);
   --clr-on-surface-hover-overlay: rgba(187, 134, 252, 0.48);
   --clr-primary: #BB86FC;
+  --clr-primary-darken: #624685;
   --clr-secondary: #70EFDE;
   --clr-outline: rgba(255, 255, 255, 0.38);
   --clr-outline-variant: rgba(255, 255, 255, 0.24);
@@ -489,9 +497,11 @@ select {
 }
 .btn-default {
   border: none;
+  background: var(--clr-gray);
   transition: var(--animation-transition-fast);
+  cursor: pointer;
 }
-.btn-default:hover {
+.btn-default:not(:disabled):hover {
   background: var(--clr-primary);
   transform: scale(var(--animation-upscale-default));
   box-shadow: var(--hover-elevation-shadow);
@@ -501,6 +511,7 @@ select {
 }
 .btn-default:disabled {
   background: var(--clr-on-surface-disabled);
+  cursor: text;
 }
 
 .side-menu-background {

@@ -1,0 +1,289 @@
+.main-wrapper {
+    display: grid;
+    grid-template-columns: repeat(var(--col-num-default), 1fr);
+    padding-inline: var(--gap-default);
+    // row-gap: var(--gap-default); // TODO: Add from tablet landscape
+    --col-num-current: var(--col-num-default);
+
+    @media only screen and (min-width: $width-tablet-landscape) {
+        --col-num-current: calc(var(--col-num-default) - 2);
+    }
+
+    .form-box {
+        grid-column-end: span var(--col-num-current);
+        margin-inline: var(--gap-default);
+        padding-top: var(--gap-default);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .progress {
+            position: relative;
+            padding: var(--gap-default);
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            gap: calc(var(--gap-default) * 2);
+
+            .logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                & > a {
+                    font-size: 40px;
+                }
+            }
+
+            .progress-steps {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: var(--gap-default);
+
+                .step {
+                    position: relative;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: var(--gap-default);
+
+                    & > span {
+                        position: relative;
+                        width: 40px;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        z-index: 1;
+
+                        color: var(--clr-surface);
+
+                        &::after {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+
+                            content: "";
+
+                            width: inherit;
+                            aspect-ratio: 1 / 1;
+
+                            z-index: -1;
+
+                            border-radius: 50%;
+                            background: var(--clr-secondary);
+                        }
+                    }
+
+                    .info {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        p:nth-child(2) {
+                            color: var(--clr-outline);
+                            display: none;
+                        }
+                    }
+
+                    &.active > span::after {
+                        background: var(--clr-primary);
+                    }
+
+                    &.completed > span::after {
+                        background: var(--clr-primary-darken);
+                    }
+                }
+            }
+        }
+
+        form {
+            width: 100%;
+            padding: var(--gap-default);
+
+            & > div {
+                max-width: 400px;
+                margin: 0 auto;
+                padding-top: 0;
+
+                .__title {
+                    font-weight: 900;
+                }
+
+                .__subtitle {
+                    color: var(--clr-outline);
+                    margin-block: calc(var(--gap-default) / 3) calc(var(--gap-default) * 1.5);
+                }
+
+                &:not(:first-child) .__title {
+                    margin-block-end: var(--gap-default);
+                }
+
+                & > div:not(.__checkbox) {
+                    display: flex;
+                    flex-direction: column;
+                    margin-block-end: var(--gap-default);
+
+                    label {
+                        margin-block-end: calc(var(--gap-default) / 6);
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            & :where(input, select) {
+                height: calc(var(--gap-default) * 1.5);
+
+                // remove default style
+                border: none;
+                outline: none;
+
+                background: transparent;
+                border-bottom: 1px solid var(--clr-on-surface-high-emphasis);
+
+                transition: var(--animation-transition-medium);
+
+                &:focus, &:hover {
+                    border-bottom: 1px solid var(--clr-primary);
+                }
+            }
+
+            .birth-date {
+                display: flex;
+
+                & > input {
+                    max-width: 70px;
+                    text-align: center;
+                    margin-inline-end: calc(var(--gap-default) / 2);
+                }
+            }
+
+            .__checkbox {
+                display: flex;
+                align-items: center;
+                gap: calc(var(--gap-default) / 2);
+
+                & > input[type="checkbox"] {
+                    height: auto;
+                }
+            }
+    
+            .form-step {
+                display: none;
+                animation: fadeIn var(--animation-duration-medium) cubic-bezier(0.39, 0.575, 0.565, 1) both;
+
+                &.active {
+                    display: block;
+                }
+            }
+
+            .btn-group {
+                display: flex;
+                justify-content: flex-start;
+
+                @media only screen and (max-width: calc($width-mobile + 25px)) {
+                    justify-content: space-between;
+                }
+                
+                flex: row wrap;
+                gap: var(--gap-default);
+
+                margin-block-start: var(--gap-default);
+
+                .btn {
+                    padding: 5px 20px;
+
+                    &:not(:disabled):hover {
+                        color: var(--clr-surface);
+                    }
+
+                    &-submit {
+                        opacity: 0;
+                        pointer-events: none;
+                        visibility: hidden;
+                        
+                        transition: var(--animation-transition-medium);
+                    }
+                }
+            }
+
+            &:has(.form-3.active) .btn-group .btn-submit {
+                opacity: 1;
+                pointer-events: all;
+                visibility: visible;
+            }
+        }
+
+        ::placeholder {
+            color: var(--clr-on-surface-medium-emphasis);
+        }
+    }
+}
+
+@media only screen and (min-width: $width-tablet-landscape) {
+    .main-wrapper .form-box {
+        flex-direction: row;
+
+        .progress {
+            min-width: 300px;
+            flex: 1 0 35%;
+
+            padding: calc(var(--gap-default) * 2);
+
+            .progress-steps {
+                flex-direction: column;
+                gap: calc(var(--gap-default) * 2);
+
+                .step {
+                    flex-direction: row;
+
+                    .info p:nth-child(2) {
+                        display: block;
+                    }
+
+                    &:not(:last-child) span::before {
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateY(100%);
+    
+                        content: '';
+    
+                        width: calc(var(--divider-ver-width) * 2);
+                        height: 60px;
+    
+                        z-index: -1;
+    
+                        background: var(--clr-outline);
+                    }
+                }
+                
+                
+            }
+        }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,8 +1,10 @@
 .btn-default {
     border: none;
+    background: var(--clr-gray);
     transition: var(--animation-transition-fast);
+    cursor: pointer;
 
-    &:hover {
+    &:not(:disabled):hover {
         background: var(--clr-primary);
         transform: scale(var(--animation-upscale-default));
         box-shadow: var(--hover-elevation-shadow);
@@ -14,5 +16,6 @@
 
     &:disabled {
         background: var(--clr-on-surface-disabled);
+        cursor: text;
     }
 }
