@@ -1,6 +1,8 @@
 /* the props */
 @import "https://unpkg.com/open-props";
 
+@import '../styles/ini/variables';
+
 .main-wrapper {
     display: grid;
     grid-template-columns: repeat(var(--col-num-default), 1fr);

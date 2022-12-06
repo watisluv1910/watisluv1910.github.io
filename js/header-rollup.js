@@ -14,6 +14,10 @@ document.addEventListener('scroll', function() {
     }
 });
 
+/**
+ * @param  {} rem
+ * @param  {} .fontSize
+ */
 function convertRemToPixels(rem) {    
     return rem * parseFloat(
         getComputedStyle(document.documentElement).fontSize

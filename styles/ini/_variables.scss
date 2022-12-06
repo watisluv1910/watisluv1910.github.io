@@ -1,3 +1,10 @@
+// * Grid breakpoints
+$width-mobile: 375px;
+$width-tablet-portrait: 600px;
+$width-tablet-landscape: 905px;
+$width-laptop: 1280px;
+$width-desktop: 1440px;
+
 :root {
     // * Articles dividers parameters
     --divider-ver-width: 0.05rem;
@@ -48,14 +55,33 @@
     --animation-delay-fast: 0.1s;
     --animation-delay-medium: 0.2s;
     --animation-delay-slow: 0.3s;
-}
 
-// * Grid breakpoints
-$width-mobile: 375px;
-$width-tablet-portrait: 600px;
-$width-tablet-landscape: 905px;
-$width-laptop: 1280px;
-$width-desktop: 1440px;
+    // Adaptivity variables
+    @media only screen and (max-width: $width-tablet-portrait) {
+        --col-num-default: var(--col-num-mobile);
+        --gap-default: var(--gap-mobile);
+    }
+    
+    @media only screen and (min-width: $width-tablet-portrait) and (max-width: $width-tablet-landscape) {
+        --col-num-default: var(--col-num-tablet-portrait);
+        --gap-default: var(--gap-tablet-portrait);
+    }
+    
+    @media only screen and (min-width: $width-tablet-landscape) and (max-width: $width-laptop) {
+        --col-num-default: var(--col-num-tablet-landscape);
+        --gap-default: var(--gap-tablet-landscape);
+    }
+    
+    @media only screen and (min-width: $width-laptop) and (max-width: $width-desktop) {
+        --col-num-default: var(--col-num-laptop);
+        --gap-default: var(--gap-laptop);
+    }
+    
+    @media only screen and (min-width: $width-desktop) {
+        --col-num-default: var(--col-num-desktop);
+        --gap-default: var(--gap-desktop);
+    }
+}
 
 .theme-light {
     // * Markup colors
@@ -119,39 +145,4 @@ $width-desktop: 1440px;
     --hover-elevation-shadow: 0px 0.5px 1.75px rgba(0, 0, 0, 0.039), 0px 1.85px 6.25px rgba(0, 0, 0, 0.19);
     --menu-elevation-shadow: 0px 3px 13px rgba(0, 0, 0, 0.039), 0px 10.5px 36px rgba(0, 0, 0, 0.19);
     --file-cover-surface-elevation-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-@media only screen and (max-width: $width-tablet-portrait) {
-    :root {
-        --col-num-default: var(--col-num-mobile);
-        --gap-default: var(--gap-mobile);
-    }
-}
-
-@media only screen and (min-width: $width-tablet-portrait) and (max-width: $width-tablet-landscape) {
-    :root {
-        --col-num-default: var(--col-num-tablet-portrait);
-        --gap-default: var(--gap-tablet-portrait);
-    }
-}
-
-@media only screen and (min-width: $width-tablet-landscape) and (max-width: $width-laptop) {
-    :root {
-        --col-num-default: var(--col-num-tablet-landscape);
-        --gap-default: var(--gap-tablet-landscape);
-    }
-}
-
-@media only screen and (min-width: $width-laptop) and (max-width: $width-desktop) {
-    :root {
-        --col-num-default: var(--col-num-laptop);
-        --gap-default: var(--gap-laptop);
-    }
-}
-
-@media only screen and (min-width: $width-desktop) {
-    :root {
-        --col-num-default: var(--col-num-desktop);
-        --gap-default: var(--gap-desktop);
-    }
 }

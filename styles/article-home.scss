@@ -1,4 +1,6 @@
-.main-wrapper { // ! Design for mobile first
+@import '../styles/ini/variables';
+
+.main-wrapper {
     display: grid;
     grid-template-columns: repeat(var(--col-num-default), 1fr);
     // row-gap: var(--gap-default); // TODO: Add from tablet landscape
@@ -8,10 +10,9 @@
         --col-num-current: calc(var(--col-num-default) - 2);
     }
 
-    // padding-inline: var(--gap-default); // TODO: Add from tablet landscape
     background: var(--clr-surface);
 
-    .__poster { // TODO: rework img and caption
+    .__poster {
         grid-column-end: span var(--col-num-current);
 
         display: grid;
