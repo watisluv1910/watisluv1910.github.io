@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/resources/icons/sun-favicon/sun-favicon-round.png" type="image/x-icon">
+        <link rel="stylesheet" href="/styles/ini/css/default.css">
+        <link rel="stylesheet" href="/styles/css/search.css">
+        <title>The Sun News - Search</title>
+    </head>
+    <body>
+        <div class="body-wrapper">
+            <header id="main-header">
+              <div class="menu-icon__container">
+                <img src="/resources/icons/interface/close-icon/close-icon-light.png" alt="close" class="menu-close clickable">
+                <img src="/resources/icons/interface/menu-icon/menu-icon-light.png" alt="menu" class="menu-toggle clickable">
+              </div>
+              <div class="theme-toggle-icon__container">
+                <img src="/resources/icons/sun-icon/sun-logo-small-light.png" alt="logo-small" class="main-logo theme-switcher clickable">
+              </div>
+              <div class="logo__container grid-col-start-2 grid-col-span-3">
+                <a href="/index.html"><div class="ff-logo">The Sun News Global</div></a>
+              </div>
+              <div class="nav-list__container">
+                <ul class="nav-list ff-body-1" role="list">
+                  <li class="clickable"><a href="#">Home</a></li>
+                  <li class="clickable"><a href="#popular-section">Popular</a></li>
+                  <li class="clickable"><a href="/pages/blog/blog-main.html">Blogs</a></li>
+                  <li class="clickable"><a href="/pages/search.html">Search</a></li>
+                  <li class="clickable"><a href="/pages/about.html">About</a></li>
+                </ul>             
+              </div>
+              <div class="user-icon__container" data-href="/pages/registration.html">
+                <img src="/resources/icons/interface/user-icon/user-icon-light.png" alt="account" class="user-logo clickable">
+              </div>
+            </header>
+            <main>
+                <div class="main-wrapper">
+                    <div class="side-menu-background"></div>
+                    <div class="side-menu__container">
+                      <div class="side-menu" aria-expanded="false">
+                        <div class="side-menu__title ff-headline-5">Front Page</div>
+                        <ul class="menu-list" role="list">
+                          <li class="menu__item">
+                            <div class="__info">
+                              <div class="expand-icon__container">
+                                <img src="/resources/icons/expand-icon-neutral.png" alt="expand">
+                              </div>
+                              <div class="menu__item__title clickable ff-subtitle-1">World</div>
+                            </div>
+                            <ul class="dropdown ff-body-1" role="list">
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Europe</div>
+                              </li>
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Asia</div>
+                              </li>
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">America</div>
+                              </li>
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Arctic</div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="menu__item">
+                            <div class="__info">                         
+                              <div class="expand-icon__container">
+                                <img src="/resources/icons/expand-icon-neutral.png" alt="expand">
+                              </div>
+                              <div class="menu__item__title clickable ff-subtitle-1">US</div>
+                            </div>
+                            <ul class="dropdown ff-body-1" role="list">
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Celebrity</div>
+                              </li>
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">BLM</div>
+                              </li>
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Economy</div>
+                              </li>
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Social</div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="menu__item">
+                            <div class="__info">                 
+                              <div class="expand-icon__container">
+                                <img src="/resources/icons/expand-icon-neutral.png" alt="expand">
+                              </div>
+                              <div class="menu__item__title clickable ff-subtitle-1">Politics</div>
+                            </div>
+                            <ul class="dropdown ff-body-1" role="list">
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Summits</div>
+                              </li>
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Scandals</div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="menu__item">
+                            <div class="__info">
+                              <div class="expand-icon__container">
+                                <img src="/resources/icons/expand-icon-neutral.png" alt="expand">
+                              </div>
+                              <div class="menu__item__title clickable ff-subtitle-1">Business</div>
+                            </div>
+                            <ul class="dropdown ff-body-1" role="list">
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Stock</div>
+                              </li>
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Start Ups</div>
+                              </li>
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Meetings</div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="menu__item">
+                            <div class="__info">
+                              <div class="expand-icon__container">
+                                <img src="/resources/icons/expand-icon-neutral.png" alt="expand">
+                              </div>
+                              <div class="menu__item__title clickable ff-subtitle-1">Tech</div>
+                            </div> 
+                            <ul class="dropdown ff-body-1" role="list">
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Releases</div>
+                              </li>
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Inventions</div>
+                              </li>
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Conferences</div>
+                              </li>
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Sales</div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="menu__item">
+                            <div class="__info">
+                              <div class="expand-icon__container">
+                                <img src="/resources/icons/expand-icon-neutral.png" alt="expand">
+                              </div>
+                              <div class="menu__item__title clickable ff-subtitle-1">Science</div>
+                            </div>
+                            <ul class="dropdown ff-body-1" role="list">
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Topics</div>
+                              </li>
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Researches</div>
+                              </li>
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Meetings</div>
+                              </li>
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Papers</div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="menu__item">
+                            <div class="__info">
+                              <div class="expand-icon__container">
+                                <img src="/resources/icons/expand-icon-neutral.png" alt="expand">
+                              </div>
+                              <div class="menu__item__title clickable ff-subtitle-1">Sports</div>
+                            </div>
+                            <ul class="dropdown ff-body-1" role="list">
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">World Cup</div>
+                              </li>
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Football</div>
+                              </li>
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Formula</div>
+                              </li>
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Volleyball</div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="menu__item">
+                            <div class="__info">
+                              <div class="expand-icon__container">
+                                <img src="/resources/icons/expand-icon-neutral.png" alt="expand">
+                              </div>
+                              <div class="menu__item__title clickable ff-subtitle-1">Travel</div>
+                            </div>
+                            <ul class="dropdown ff-body-1" role="list">
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Restrictions</div>
+                              </li>
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Places</div>
+                              </li>
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Blogs</div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="menu__item">
+                            <div class="__info">
+                              <div class="expand-icon__container">
+                                <img src="/resources/icons/expand-icon-neutral.png" alt="expand">
+                              </div>
+                              <div class="menu__item__title clickable ff-subtitle-1">Culture</div>               
+                            </div>
+                            <ul class="dropdown ff-body-1" role="list">
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Topics</div>
+                              </li>
+                              <li class="dropdown__item">
+                                <div class="dropdown__item__title clickable" data-href="/pages/search.html">Researches</div>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="search-bar__container grid-col-start-2">
+                        <div class="search-bar ff-body-1">
+                            <input type="text" id="search-input" placeholder="Search for articles..">
+                            <img src="/resources/icons/interface/search-icon/search-icon-light.png" alt="search" width="20px" height="20px">
+                        </div>
+                        <div class="filter-section ff-body-1">
+                            <div class="type-filter">
+                                <p class="type-filter__item">Everything</p>
+                                <p class="type-filter__item">Stories</p>
+                                <p class="type-filter__item">Videos</p>
+                                <p class="type-filter__item">Photos</p>
+                            </div>
+                            <div class="category-filter">
+                                <select name="category" id="category-selector">
+                                    <option value="All">All TSN</option>
+                                    <option value="World">World</option>
+                                    <option value="United States">US</option>
+                                    <option value="Politics">Politics</option>
+                                    <option value="Business">Business</option>
+                                    <option value="Tech">Tech</option>
+                                    <option value="Science">Science</option>
+                                    <option value="Sports">Sports</option>
+                                    <option value="Travel">Travel</option>
+                                    <option value="Culture">Culture</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-results__container grid-col-start-2">
+                        <div class="search-results__controls ff-body-2">
+                            <div class="search-results__counter">
+                                <p>Displaying 
+                                    <span id="search-results-count-start">0</span> - 
+                                    <span id="search-results-count-end">0</span> results out of 
+                                    <span id="search-results-count-total">0</span> for 
+                                    <strong id="search__query">Football</strong>
+                                </p>
+                            </div>
+                            <div class="search__facets search-sort">
+                                <span class="facet__item__label">Sorting by</span>
+                                <button class="facet__item btn" id="newest">Newest</button>
+                                <button class="facet__item btn" id="relevance">Relevancy</button>
+                            </div>
+                            <ul class="search__facets search-sort mobile" role="list">
+                                <img src="/resources/icons/interface/arrow-icon/down-arrow-light.png" alt="down-arrow" class="icon-ui-caret-down">
+                                <li class="facet__item hidden">Sort by</li>
+                                <li class="facet__item clicked" id="newest-mobile">Newest</li>
+                                <li class="facet__item" id="relevance-mobile">Relevancy</li>
+                            </ul>                                 
+                        </div>
+                        <ul class="search-results__list" role="list">
+                            <li class="search-result">
+                                <article class="__item" data-href="/pages/articles/article-details.html">
+                                    <div class="img-wrapper">
+                                        <img src="/resources/images/searchable-news/viktor-bout-searchable.jpg" alt="viktor bout">
+                                    </div>    
+                                    <div class="__content">
+                                        <div class="__meta">
+                                            <p class="__category ff-overline">Politics</p>
+                                            <p class="__time ff-body-2">27/06/2021</p>
+                                        </div>
+                                        <p class="__title ff-subtitle-1">Russian arms dealer swapped for Brittney Griner</p>
+                                        <p class="__text ff-body-2"> 
+                                            Brittney Griner's freedom ultimately hinged on the release of a convicted Russian arms dealer whose life story inspired a Hollywood film.
+                                            
+                                            The US basketball star was released on Thursday from Russian detention in a prisoner swap for Viktor Bout, nicknamed the “Merchant of Death” by his accusers.
+                                            
+                                            Bout, a former Soviet military officer, was serving a 25-year prison sentence in the United States on charges of conspiring to kill Americans, acquire and export anti-aircraft missiles, and provide material support to a terrorist organization. Bout has maintained he is innocent.</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="search-result">
+                                <article class="__item" data-href="/pages/articles/article-details.html">
+                                    <div class="img-wrapper">
+                                        <img src="/resources/images/searchable-news/welcoming-countries-searchable.jpg" alt="welcoming countries">
+                                    </div>    
+                                    <div class="__content">
+                                        <div class="__meta">
+                                            <p class="__category ff-overline">World</p>
+                                            <p class="__time ff-body-2">8/12/2022</p>
+                                        </div>
+                                        <p class="__title ff-subtitle-1">The world's most 'welcoming' countries of 2022</p>
+                                        <p class="__text ff-body-2">For the busiest of business travelers, who regularly find themselves called to fly to a string of countries at short notice, up-to-date information on which countries require visas or electronic travel authorizations (eTAs) is essential.
+                                        That's where Passport Indexes come in. There are several rival indexes on the market, including Arton Capital's Passport Index and the Henley Passport Index, which measure the relative clout of citizens' travel documents according to how many countries its holders can visit visa-free or visa-on-demand.</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="search-result">
+                                <article class="__item" data-href="/pages/articles/article-details.html">
+                                    <div class="img-wrapper">
+                                        <img src="/resources/images/searchable-news/african-postcard-searchable.jpg" alt="african postcard">
+                                    </div>    
+                                    <div class="__content">
+                                        <div class="__meta">
+                                            <p class="__category ff-overline">Culture</p>
+                                            <p class="__time ff-body-2">19/10/2021</p>
+                                        </div>
+                                        <p class="__title ff-subtitle-1">Postcards from across Africa show the continent free from colonial-era stereotypes</p>
+                                        <p class="__text ff-body-2">These days, you can't avoid seeing pictures from your friends' vacations on Instagram or Facebook, but not so long ago, the most common way to see the world was on a postcard.
+                                        From the late 19th century to the early 20th century, when international travel was less commonplace, postcards were a crucial window to the wider world for many people. But in much the same way that social media can be used to spread misinformation, postcards would also be used to promote a particular agenda.</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="search-result">
+                                <article class="__item" data-href="/pages/articles/article-details.html">
+                                    <div class="img-wrapper">
+                                        <img src="/resources/images/searchable-news/xi-saudi-arabia-searchable.jpg" alt="oil">
+                                    </div>    
+                                    <div class="__content">
+                                        <div class="__meta">
+                                            <p class="__category ff-overline">Business</p>
+                                            <p class="__time ff-body-2">08/01/2022</p>
+                                        </div>
+                                        <p class="__title ff-subtitle-1">When China and Saudi Arabia meet, nothing matters more than oil</p>
+                                        <p class="__text ff-body-2">Chinese President Xi Jinping is visiting Saudi Arabia this week for the first time in nearly seven years, during which he is expected to sign billions of dollars of deals with the world's largest oil exporter and meet leaders from across the Middle East.
+                                        The visit is a sign that China and the Gulf region are deepening their economic relations at a time when US-Saudi ties have crumbled over OPEC's decision to slash crude oil supply.</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="search-result">
+                                <article class="__item" data-href="/pages/articles/article-details.html">
+                                    <div class="img-wrapper">
+                                        <img src="/resources/images/searchable-news/worlds-fastest-trains-searchable.jpg" alt="fast trains">
+                                    </div>    
+                                    <div class="__content">
+                                        <div class="__meta">
+                                            <p class="__category ff-overline">Tech</p>
+                                            <p class="__time ff-body-2">16/01/2022</p>
+                                        </div>
+                                        <p class="__title ff-subtitle-1">Flying without wings: The world's fastest trains</p>
+                                        <p class="__text ff-body-2">As the world faces up to climate change, short-haul flights look increasingly unattractive to many travelers. The flygskam (flight shame) phenomenon that started in Scandinavia is already inspiring many travelers to reduce their reliance on airlines.
+                                        Until someone proves otherwise, high-speed rail is the most effective alternative to air travel for journeys of up to 1,100 kilometers (700 miles). Shuttling passengers between city centers at speeds of 290 kph (180 mph) or more, it offers a compelling combination of speed and convenience.</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="search-result">
+                                <article class="__item" data-href="/pages/articles/article-details.html">
+                                    <div class="img-wrapper">
+                                        <img src="/resources/images/searchable-news/december-cold-moon-searchable.jpg" alt="dining">
+                                    </div>    
+                                    <div class="__content">
+                                        <div class="__meta">
+                                            <p class="__category ff-overline">Travel</p>
+                                            <p class="__time ff-body-2">02/03/2022</p>
+                                        </div>
+                                        <p class="__title ff-subtitle-1">Full 'cold moon' shines bright and eclipses Mars in a rare event</p>
+                                        <p class="__text ff-body-2"> 
+                                            December's full moon, also known as the “cold moon,” will shine bright in the night sky this Wednesday, peaking at 11:08 p.m. ET.                                            
+                                            Jupiter, Saturn and Mars will also be visible in the night sky Wednesday, with an extraordinarily rare phenomenon, known as a lunar occultation of Mars, set to happen around the moon's peak fullness, according to EarthSky.</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="search-result">
+                                <article class="__item" data-href="/pages/articles/article-details.html">
+                                    <div class="img-wrapper">
+                                        <img src="/resources/images/searchable-news/ukraine-farming-searchable.jpg" alt="farming">
+                                    </div>    
+                                    <div class="__content">
+                                        <div class="__meta">
+                                            <p class="__category ff-overline">US</p>
+                                            <p class="__time ff-body-2">15/03/2022</p>
+                                        </div>
+                                        <p class="__title ff-subtitle-1">From the US to Ukraine, farmer solidarity is universal</p>
+                                        <p class="__text ff-body-2">During the fall harvest, across rural America, you may at times encounter a mechanical convoy of combine harvesters rumbling down the road, headed who knows where. As likely as not, the drivers of these huge machines are going to a farm they don't know to harvest a crop they never planted for a farmer they've never met. And they do this without asking for a penny in return.</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="search-result">
+                                <article class="__item" data-href="/pages/articles/article-details.html">
+                                    <div class="img-wrapper">
+                                        <img src="/resources/images/searchable-news/morocco-spain-quarter-finals-searchable.jpg" alt="football">
+                                    </div>    
+                                    <div class="__content">
+                                        <div class="__meta">
+                                            <p class="__category ff-overline">Sports</p>
+                                            <p class="__time ff-body-2">03/05/2022</p>
+                                        </div>
+                                        <p class="__title ff-subtitle-1">Why Morocco's World Cup success is no fluke</p>
+                                        <p class="__text ff-body-2">After three hours of constant noise, the Education City Stadium was brought to library-like silence as Achraf Hakimi stood over the penalty spot.
+                                        Hakimi was born in Madrid and the the weight of Africa and the Arab world on his shoulders, but you would never have guessed as the Paris Saint-Germain coolly clipped the ball into the net and set off wild celebrations not just in the stadium, but also in Morocco and for the Moroccan diaspora.</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="search-result">
+                                <article class="__item" data-href="/pages/articles/article-details.html">
+                                    <div class="img-wrapper">
+                                        <img src="/resources/images/searchable-news/cyril-ramaphosa-searchable.jpg" alt="cyril ramaphosa">
+                                    </div>    
+                                    <div class="__content">
+                                        <div class="__meta">
+                                            <p class="__category ff-overline">Politics</p>
+                                            <p class="__time ff-body-2">27/06/2022</p>
+                                        </div>
+                                        <p class="__title ff-subtitle-1">South African President Cyril Ramaphosa resists calls to resign</p>
+                                        <p class="__text ff-body-2">After days of speculation, South African President Cyril Ramaphosa looks set to fight calls for his resignation despite a damning report that found he could have covered up the theft of hundreds of thousands of dollars at his private game farm.
+                                        His spokesman Vincent Magwenya said Ramaphosa would not be resigning “based on a flawed report,” and “neither is he stepping aside.”</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="search-result">
+                                <article class="__item" data-href="/pages/articles/article-details.html">
+                                    <div class="img-wrapper">
+                                        <img src="/resources/images/searchable-news/baguette-searchable.jpg" alt="baguette">
+                                    </div>    
+                                    <div class="__content">
+                                        <div class="__meta">
+                                            <p class="__category ff-overline">Culture</p>
+                                            <p class="__time ff-body-2">10/07/2022</p>
+                                        </div>
+                                        <p class="__title ff-subtitle-1">The wondrous power of France's national dish</p>
+                                        <p class="__text ff-body-2">French President Emmanuel Macron was all pumped up - in his element at the French embassy in Washington, DC, on Thursday. Surrounded by an adoring crowd of citizens that had twice elected him president, he was embarking on what he hoped to be a triumphant state visit to President Joe Biden. But towering over these accomplishments was a singular recognition announced the very morning of his arrival.</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="search-result">
+                                <article class="__item" data-href="/pages/articles/article-details.html">
+                                    <div class="img-wrapper">
+                                        <img src="/resources/images/searchable-news/deborah-rayner-searchable.jpg" alt="Deborah Rayner">
+                                    </div>    
+                                    <div class="__content">
+                                        <div class="__meta">
+                                            <p class="__category ff-overline">Culture</p>
+                                            <p class="__time ff-body-2">29/07/2022</p>
+                                        </div>
+                                        <p class="__title ff-subtitle-1">Deborah Rayner</p>
+                                        <p class="__text ff-body-2">Deborah Rayner is Senior Vice President of International Newsgathering for TV and Digital at CNN International. In this role she oversees CNN's international newsgathering worldwide including the International Desk, all international correspondents, bureaus and news teams in addition to gathering international digital editorial content for CNN Digital. She is based in London.</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="search-result">
+                                <article class="__item" data-href="/pages/articles/article-details.html">
+                                    <div class="img-wrapper">
+                                        <img src="/resources/images/searchable-news/antony-blinken-searchable.jpg" alt="Antony Blinken">
+                                    </div>    
+                                    <div class="__content">
+                                        <div class="__meta">
+                                            <p class="__category ff-overline">Politics</p>
+                                            <p class="__time ff-body-2">01/08/2022</p>
+                                        </div>
+                                        <p class="__title ff-subtitle-1">State Department adds Russian mercenary firm Wagner Group to entities of concern under International Religious Freedom Act</p>
+                                        <p class="__text ff-body-2">The Biden administration is adding the Wagner Group, an infamous private Russian military firm, to the list of Entities of Particular Concern under the International Religious Freedom Act “based on its actions in the Central African Republic,” US Secretary of State Antony Blinken said on Friday.</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="search-result">
+                                <article class="__item" data-href="/pages/articles/article-details.html">
+                                    <div class="img-wrapper">
+                                        <img src="/resources/images/searchable-news/william-kate-boston-visit-searchable.jpg" alt="prince William in Boston">
+                                    </div>    
+                                    <div class="__content">
+                                        <div class="__meta">
+                                            <p class="__category ff-overline">US</p>
+                                            <p class="__time ff-body-2">16/11/2022</p>
+                                        </div>
+                                        <p class="__title ff-subtitle-1">Prince William and Kate make first US trip in eight years as racism controversy simmers back home</p>
+                                        <p class="__text ff-body-2">The new Prince and Princess of Wales touched down in Boston Wednesday ahead of the second iteration of the Earthshot Prize Awards later this week, in their first trip to the United States since 2014.
+                                        The couple flew into the city on a commercial flight as controversy erupted back home, after an aide resigned following “unacceptable and deeply regrettable” remarks to a Black executive visiting Buckingham Palace earlier this week.</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="search-result">
+                                <article class="__item" data-href="/pages/articles/article-details.html">
+                                    <div class="img-wrapper">
+                                        <img src="/resources/images/searchable-news/senegal-ecuador-world-cup-searchable.jpg" alt="Senegal Ecuador Cup">
+                                    </div>    
+                                    <div class="__content">
+                                        <div class="__meta">
+                                            <p class="__category ff-overline">Sports</p>
+                                            <p class="__time ff-body-2">28/11/2022</p>
+                                        </div>
+                                        <p class="__title ff-subtitle-1">Senegal and Netherlands progress to World Cup knockout stages</p>
+                                        <p class="__text ff-body-2">Senegal and Netherlands both qualified for the World Cup knockout stages from Group A on Tuesday at Qatar 2022.
+                                        For the Netherlands, a comfortable 2-0 win against host nation Qatar ensured its progression to the last 16, while Senegal overcame Ecuador 2-1 with a hard-earned victory.
+                                        In a tense, must-win game for Senegal, the Lions of Teranga went ahead through Ismaïla Sarr's penalty before Moisés Caicedo leveled for Ecuador in the second half.</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="search-result">
+                                <article class="__item" data-href="/pages/articles/article-details.html">
+                                    <div class="img-wrapper">
+                                        <img src="/resources/images/searchable-news/weather-severe-storm-setup-searchable.jpg" alt="tornadoes US">
+                                    </div>    
+                                    <div class="__content">
+                                        <div class="__meta">
+                                            <p class="__category ff-overline">US</p>
+                                            <p class="__time ff-body-2">05/12/2022</p>
+                                        </div>
+                                        <p class="__title ff-subtitle-1">Here's why the US has more tornadoes than any other country</p>
+                                        <p class="__text ff-body-2">The US averages over 1,150 tornadoes every year. That's more than any other country. In fact, it's more than Canada, Australia and all European countries combined.
+                                        Within the US, every state has had at least one tornado, and some have dozens each year.
+                                        The US is special in terms of producing so many tornadoes, especially violent ones.</p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <div class="search-results__pagi">
+                            <div class="pagination-bar">
+                                <div class="pagination-arrow pagination-arrow-left">
+                                    <img src="/resources/icons/interface/arrow-icon/paggination-arrow-icon/pagination-left-arrow-light.png" alt="prev">
+                                </div>
+                                <div class="pagination-links ff-subtitle-1">
+                                    <span class="pagination-link active">1</span>
+                                    <span class="pagination-link">2</span>
+                                    <span class="pagination-link">3</span>
+                                    <span class="pagination-link">4</span>
+                                    <span class="pagination-link">5</span>
+                                </div>
+                                <div class="pagination-arrow pagination-arrow-right">
+                                    <img src="/resources/icons/interface/arrow-icon/paggination-arrow-icon/pagination-right-arrow-light.png" alt="next">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="footer-content-wrapper grid-col-start-2 grid-col-span-fullscreen ff-body-1">
+                  <div class="head">
+                    <div class="logo__container">
+                      <a href="/index.html"><div class="ff-logo">The Sun News Global</div></a>
+                    </div>
+                    <div class="media__container">
+                      <a href="https://www.facebook.com/" target="_blank"><img src="/resources/icons/social-media/facebook.png" alt="facebook"></a>
+                      <a href="https://www.instagram.com/" target="_blank"><img src="/resources/icons/social-media/instagram.png" alt="instagram"></a>
+                      <a href="https://vk.com/watisluv3rd" target="_blank"><img src="/resources/icons/social-media/vk.png" alt="vk"></a>
+                      <a href="https://twitter.com/" target="_blank"><img src="/resources/icons/social-media/twitter.png" alt="twitter"></a>
+                      <a href="https://www.youtube.com/" target="_blank"><img src="/resources/icons/social-media/youtube.png" alt="youtube"></a>
+                    </div>
+                  </div>
+                  <div class="main__content">
+                    <div class="boxes__container">
+                      <ul class="__box" role="list">
+                        <li class="__title ff-subtitle-1">Navigation</li>
+                        <li><a href="#" class="clickable">Home</a></li>
+                        <li><a href="#popular-section" class="clickable">Popular</a></li>
+                        <li><a href="/pages/blog/blog-main.html" class="clickable">Blogs</a></li>
+                        <li><a href="/pages/search.html" class="clickable">Search</a></li>
+                      </ul>
+                      <ul class="__box" role="list">
+                        <li class="__title ff-subtitle-1">Account</li>
+                        <li><a href="/pages/registration.html" class="clickable">Registration</a></li>
+                        <li><a href="#" class="clickable">My account</a></li>
+                        <li><a href="#" class="clickable">Prefrences</a></li>
+                        <li><a href="#" class="clickable">Subcription</a></li>
+                      </ul>
+                      <ul class="__box" role="list">
+                        <li class="__title ff-subtitle-1">Company</li>
+                        <li><a href="#" class="clickable">Partnership</a></li>
+                        <li><a href="#" class="clickable">Services</a></li>
+                        <li><a href="#" class="clickable">Contacts</a></li>
+                        <li><a href="/pages/about.html" class="clickable">About us</a></li>
+                      </ul>
+                      <ul class="__box" role="list">
+                        <li class="__title ff-subtitle-1">Edition</li>
+                        <li><a href="#" class="clickable">International</a></li>
+                        <li><a href="#" class="clickable">United States</a></li>
+                        <li><a href="#" class="clickable">Arabic</a></li>
+                        <li><a href="#" class="clickable">Español</a></li>
+                      </ul>
+                      <div class="__box input-box">
+                        <div class="__title ff-subtitle-1">News & Blogs</div>
+                        <form class="__input" action="/pages/search.html" method="get">
+                          <input type="text" id="footer-search" placeholder="Find in Sun News..." class="ff-caption">
+                          <input type="submit" value="Search" class="btn-default btn-footer-search clickable ff-button">
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom">
+                    <div class="bottom__content ff-body-2">
+                      <span class="__copyright">
+                        Copyright © 2022
+                        <a href="#" class="clickable"> The Sun News Network. </a>
+                        All rights reserved.
+                      </span>
+                      <span class="__policy">
+                        <a href="/resources/config/the-sun-news-privacy-policy.txt" class="clickable" download>Privacy policy</a>
+                        <a href="/resources/config/the-sun-news-terms-and-conditions.txt" class="clickable" download>Terms & Condition</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>    
+            </footer>
+        </div>
+
+        <!-- Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+        <!-- Page scripts: -->
+        <script src="/js/side-menu.js"></script>
+        <script src="/js/header-rollup.js"></script>
+        <script src="/js/theme-switcher.js"></script>
+        <script src="/js/clickable.js"></script>
+        <script src="/js/search.js"></script>
+    </body>
+</html>

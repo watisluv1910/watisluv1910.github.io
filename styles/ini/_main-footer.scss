@@ -168,6 +168,13 @@ footer {
     footer .footer-content-wrapper {
         grid-column-end: span var(--col-num-default);
 
+        @media only screen and (max-width: $width-tablet-portrait) {
+            
+            .head {
+                justify-content: center;
+            }
+        }
+
         @media only screen and (min-width: $width-tablet-landscape) {
             grid-column-end: span calc(var(--col-num-default) - 2);
         }

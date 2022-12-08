@@ -455,27 +455,34 @@ html {
 
     .latest-section__container {
 
-      .__header {
-        position: relative;
-        padding-bottom: var(--gap-default);
+      .latest-section {
 
-        &::after {
-          position: absolute;
-          left: var(--gap-default);
-          bottom: 0;
-
-          content: "";
-          width: calc(100% - var(--gap-default) * 2);
-          border-bottom: var(--divider-hor-height) dotted var(--clr-outline);
+        .__header {
+          position: relative;
+          padding-bottom: var(--gap-default);
+  
+          &::after {
+            position: absolute;
+            left: var(--gap-default);
+            bottom: 0;
+  
+            content: "";
+            width: calc(100% - var(--gap-default) * 2);
+            border-bottom: var(--divider-hor-height) dotted var(--clr-outline);
+          }
         }
-      }
+  
+        .__item {
+        
+          &.btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
 
-      .__item {
-      
-        &.btn {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          &:nth-child(7)::after { // ? :last-child didnt work
+            display: flex;
+          }
         }
       }
 

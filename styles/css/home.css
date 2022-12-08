@@ -456,11 +456,11 @@ html {
   .body-wrapper .main-wrapper .general-section__container::after {
     display: none;
   }
-  .body-wrapper .main-wrapper .latest-section__container .__header {
+  .body-wrapper .main-wrapper .latest-section__container .latest-section .__header {
     position: relative;
     padding-bottom: var(--gap-default);
   }
-  .body-wrapper .main-wrapper .latest-section__container .__header::after {
+  .body-wrapper .main-wrapper .latest-section__container .latest-section .__header::after {
     position: absolute;
     left: var(--gap-default);
     bottom: 0;
@@ -468,10 +468,13 @@ html {
     width: calc(100% - var(--gap-default) * 2);
     border-bottom: var(--divider-hor-height) dotted var(--clr-outline);
   }
-  .body-wrapper .main-wrapper .latest-section__container .__item.btn {
+  .body-wrapper .main-wrapper .latest-section__container .latest-section .__item.btn {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .body-wrapper .main-wrapper .latest-section__container .latest-section .__item:nth-child(7)::after {
+    display: flex;
   }
   .body-wrapper .main-wrapper .latest-section__container::before {
     position: absolute;

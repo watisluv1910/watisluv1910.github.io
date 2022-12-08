@@ -1,10 +1,10 @@
-1)Landing page
-    a)Footer
+1)Landing page -- Done
+    a)Footer -- Done
         1)General style -- Done
-        2)Pages for footer's links
+        2)Pages for footer's links -- Done
         3)Adaptivity -- Done
     b)Adaptivity -- Done
-    c)Links to themes and categories own pages
+    c)Links to themes and categories own pages -- Done
     d)Menu -- Done
     e)Short top app background -- Done
     f)Image treatments -- Done
@@ -12,11 +12,10 @@
     h)Go to the unified gap standart -- Done
     i)Make two ore more animation variables with different timing -- Done
     k)Change recently added news covers and titles (should be different) -- Done
-    l)Download all fonts locally, rework fonts
-2)Single article page
-    a)Dialogs
+    l)Download all fonts locally, rework fonts -- Done
+2)Single article page -- Done
 3)Other
-    a)General search
+    a)General search -- Done
     b)Dark/light themes -- Done
-    c)Subscription stepper own page
-    d)Add urls to all links
+    c)Registration stepper own page -- Done
+    d)Add urls to all links -- Done
