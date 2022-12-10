@@ -40,7 +40,7 @@
 
 // * Grid column end
 .grid-col-span-fullscreen {
-    grid-column-end: span calc(var(--col-num-default) - 2); // ? Span full
+    grid-column-end: span calc(var(--col-num-default) - 2);
 }
 
 // * Grid row span
