@@ -895,15 +895,15 @@ html {
 
     .latest-section__container {
 
-      @media only screen and (max-width: calc($width-laptop + 75px)) {
-        .latest-section .__item:nth-child(6) {
-          display: none;
-        }
+      // @media only screen and (max-width: calc($width-laptop + 75px)) {
+      //   .latest-section .__item:nth-child(6) {
+      //     display: none;
+      //   }
 
-        .latest-section .__item:nth-child(5)::after {
-          display: none;
-        }
-      }
+      //   .latest-section .__item:nth-child(5)::after {
+      //     display: none;
+      //   }
+      // }
 
       .latest-section .__item:nth-child(n + 7) {
         display: none;
@@ -927,7 +927,7 @@ html {
   }
 }
 
-@media only screen and (min-width: $width-laptop) {
+@media only screen and (min-width: calc($width-laptop + 1px)) {
   .body-wrapper .main-wrapper .stock-section__container {
 
     &.grid-col-start-2, &.grid-col-start-3 {
