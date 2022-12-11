@@ -49,13 +49,13 @@
     --gap-default: var(--gap-tablet-portrait);
   }
 }
-@media only screen and (min-width: 905px) and (max-width: 1280px) {
+@media only screen and (min-width: 905px) and (max-width: 1250px) {
   :root {
     --col-num-default: var(--col-num-tablet-landscape);
     --gap-default: var(--gap-tablet-landscape);
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+@media only screen and (min-width: 1250px) and (max-width: 1440px) {
   :root {
     --col-num-default: var(--col-num-laptop);
     --gap-default: var(--gap-laptop);

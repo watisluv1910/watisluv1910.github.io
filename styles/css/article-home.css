@@ -49,13 +49,13 @@
     --gap-default: var(--gap-tablet-portrait);
   }
 }
-@media only screen and (min-width: 905px) and (max-width: 1280px) {
+@media only screen and (min-width: 905px) and (max-width: 1250px) {
   :root {
     --col-num-default: var(--col-num-tablet-landscape);
     --gap-default: var(--gap-tablet-landscape);
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+@media only screen and (min-width: 1250px) and (max-width: 1440px) {
   :root {
     --col-num-default: var(--col-num-laptop);
     --gap-default: var(--gap-laptop);
@@ -146,7 +146,7 @@
 .main-wrapper .__poster figcaption {
   color: var(--clr-on-surface-medium-emphasis);
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1250px) {
   .main-wrapper .__poster figcaption {
     font-size: 16px;
     line-height: 20px;
@@ -261,7 +261,7 @@
     padding-top: 0;
   }
 }
-@media screen and (min-width: 905px) and (min-width: 1280px) {
+@media screen and (min-width: 905px) and (min-width: 1250px) {
   .main-wrapper .__info .__general-info .__title {
     font-size: 40px;
     line-height: 125%;
@@ -271,7 +271,7 @@
     line-height: 162%;
   }
 }
-@media screen and (min-width: 905px) and (min-width: 1280px) and (min-width: 1440px) {
+@media screen and (min-width: 905px) and (min-width: 1250px) and (min-width: 1440px) {
   .main-wrapper .__info .__general-info .__title {
     font-size: 48px;
     line-height: 120%;
@@ -281,12 +281,12 @@
     line-height: 160%;
   }
 }
-@media screen and (min-width: 905px) and (min-width: 1280px) {
+@media screen and (min-width: 905px) and (min-width: 1250px) {
   .main-wrapper .__info .__meta .author__photo {
     width: 44px;
   }
 }
-@media screen and (min-width: 905px) and (min-width: 1280px) and (min-width: 1440px) {
+@media screen and (min-width: 905px) and (min-width: 1250px) and (min-width: 1440px) {
   .main-wrapper .__info .__meta .author__photo {
     width: 48px;
   }
@@ -295,13 +295,13 @@
     line-height: 140%;
   }
 }
-@media screen and (min-width: 905px) and (min-width: 1280px) {
+@media screen and (min-width: 905px) and (min-width: 1250px) {
   .main-wrapper .__text-wrapper > p {
     font-size: 20px;
     line-height: 180%;
   }
 }
-@media screen and (min-width: 905px) and (min-width: 1280px) and (min-width: 1440px) {
+@media screen and (min-width: 905px) and (min-width: 1250px) and (min-width: 1440px) {
   .main-wrapper .__text-wrapper > p {
     font-size: 22px;
   }

@@ -1,3 +1,5 @@
+@import '../styles/ini/variables';
+
 footer {
     display: grid;
     grid-template-columns: repeat(var(--col-num-default), 1fr);
@@ -163,7 +165,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1250px) {
 
     footer .footer-content-wrapper {
         grid-column-end: span var(--col-num-default);

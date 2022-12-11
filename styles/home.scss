@@ -927,7 +927,7 @@ html {
   }
 }
 
-@media only screen and (min-width: calc($width-laptop + 1px)) {
+@media only screen and (min-width: $width-laptop) {
   .body-wrapper .main-wrapper .stock-section__container {
 
     &.grid-col-start-2, &.grid-col-start-3 {
